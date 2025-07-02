@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator>
+  <link href="https://shihabul-shuvo.github.io/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://shihabul-shuvo.github.io/" rel="alternate" type="text/html" hreflang="en" />
+  <updated>2025-07-02T08:38:00+06:00</updated>
+  <id>https://shihabul-shuvo.github.io/feed.xml</id>
+  <title type="html">Md Shihabul Islam's Portfolio</title>
+  <subtitle>A personal portfolio showcasing innovative projects in software development, AI, IoT, and more, built with passion for technology and learning.</subtitle>
+  <author>
+    <name>Md Shihabul Islam</name>
+  </author>
+  <entry>
+    <title type="html">Welcome to My Portfolio</title>
+    <id>https://shihabul-shuvo.github.io/entries/2025-07-02-welcome</id>
+    <updated>2025-07-02T08:38:00+06:00</updated>
+    <published>2025-07-02T08:38:00+06:00</published>
+    <link href="https://shihabul-shuvo.github.io/" rel="alternate" type="text/html" />
+    <author>
+      <name>Md Shihabul Islam</name>
+    </author>
+    <summary type="html"><![CDATA[Welcome to my portfolio! I share my journey through exciting projects in software development, AI, IoT, and more, reflecting my passion for technology. Explore my work, from e-commerce platforms to tumor detection systems, on GitHub.]]></summary>
+    <content type="html"><![CDATA[
+      <h2>Welcome to My Portfolio</h2>
+      <p>I’m Md Shihabul Islam, and this is my space to showcase the results of my projects, ranging from mini experiments to full-scale applications. My work spans software development, AI, IoT, and networking, reflecting years of learning and fun in technology. You can explore my projects, like the Smart Vehicle Speed Limit Enforcement System and MRI Brain Tumor Detection System, on my <a href="https://github.com/Shihabul-Shuvo">GitHub</a>.</p>
+      <hr />
+      <p>A little bit about me. I love travelling; I enjoy playing football, table tennis, and hanging out with friends; I’m passionate about watching movies, anime, and playing online games. Thank you!</p>
+      <h4 id="a-small-bucket-list-will-grow-in-the-future">A Small Bucket List (Will grow in the future)</h4>
+      <ul>
+        <li>Doing skydiving</li>
+        <li>Visiting the wonders of the world</li>
+        <li>Going on an adventure on the sea</li>
+      </ul>
+      <hr />
+      <p>Thanks for visiting! Check out my projects and feel free to connect.</p>
+      <p>Best,<br />Md Shihabul Islam</p>
+    ]]></content>
+  </entry>
+</feed>
