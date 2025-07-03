@@ -84,6 +84,27 @@
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script>
+
+    <style>
+      .project-links .btn {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.5rem;
+        margin: 0 0.15rem;
+      }
+      @media (max-width: 576px) {
+        .project-links .btn {
+          font-size: 1rem;
+          padding: 0.2rem 0.35rem;
+          margin: 0 0.1rem;
+          display: inline-block;
+        }
+        .project-links {
+          flex-direction: row !important;
+          justify-content: flex-end !important;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
   </head>
 
   <!-- Body -->
@@ -165,8 +186,8 @@
             <div class="col-md-4 mb-3">
               <a
                 href="/projects/software_development/"
-                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none"
-                style="display: inline-block; transition: transform 0.3s ease"
+                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none project-category-card"
+                style="background: var(--category-bg, #f5f5fa); display: inline-block; transition: transform 0.3s ease"
                 onmouseover="this.style.transform='scale(1.1)'; this.querySelector('.view-projects').style.textDecoration='underline'"
                 onmouseout="this.style.transform='scale(1)'; this.querySelector('.view-projects').style.textDecoration='none'"
               >
@@ -184,8 +205,8 @@
             <div class="col-md-4 mb-3">
               <a
                 href="/projects/ai_ml/"
-                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none"
-                style="display: inline-block; transition: transform 0.3s ease"
+                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none project-category-card"
+                style="background: var(--category-bg, #f5f5fa); display: inline-block; transition: transform 0.3s ease"
                 onmouseover="this.style.transform='scale(1.1)'; this.querySelector('.view-projects').style.textDecoration='underline'"
                 onmouseout="this.style.transform='scale(1)'; this.querySelector('.view-projects').style.textDecoration='none'"
               >
@@ -203,8 +224,8 @@
             <div class="col-md-4 mb-3">
               <a
                 href="/projects/computer_vision/"
-                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none"
-                style="display: inline-block; transition: transform 0.3s ease"
+                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none project-category-card"
+                style="background: var(--category-bg, #f5f5fa); display: inline-block; transition: transform 0.3s ease"
                 onmouseover="this.style.transform='scale(1.1)'; this.querySelector('.view-projects').style.textDecoration='underline'"
                 onmouseout="this.style.transform='scale(1)'; this.querySelector('.view-projects').style.textDecoration='none'"
               >
@@ -222,8 +243,8 @@
             <div class="col-md-4 mb-3">
               <a
                 href="/projects/networking/"
-                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none"
-                style="display: inline-block; transition: transform 0.3s ease"
+                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none project-category-card"
+                style="background: var(--category-bg, #f5f5fa); display: inline-block; transition: transform 0.3s ease"
                 onmouseover="this.style.transform='scale(1.1)'; this.querySelector('.view-projects').style.textDecoration='underline'"
                 onmouseout="this.style.transform='scale(1)'; this.querySelector('.view-projects').style.textDecoration='none'"
               >
@@ -241,8 +262,8 @@
             <div class="col-md-4 mb-3">
               <a
                 href="/projects/automation_testing/"
-                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none"
-                style="display: inline-block; transition: transform 0.3s ease"
+                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none project-category-card"
+                style="background: var(--category-bg, #f5f5fa); display: inline-block; transition: transform 0.3s ease"
                 onmouseover="this.style.transform='scale(1.1)'; this.querySelector('.view-projects').style.textDecoration='underline'"
                 onmouseout="this.style.transform='scale(1)'; this.querySelector('.view-projects').style.textDecoration='none'"
               >
@@ -260,8 +281,8 @@
             <div class="col-md-4 mb-3">
               <a
                 href="/projects/iot_and_others/"
-                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none"
-                style="display: inline-block; transition: transform 0.3s ease"
+                class="card hoverable p-4 shadow-sm text-center d-block text-decoration-none project-category-card"
+                style="background: var(--category-bg, #f5f5fa); display: inline-block; transition: transform 0.3s ease"
                 onmouseover="this.style.transform='scale(1.1)'; this.querySelector('.view-projects').style.textDecoration='underline'"
                 onmouseout="this.style.transform='scale(1)'; this.querySelector('.view-projects').style.textDecoration='none'"
               >
@@ -288,16 +309,16 @@
               <div class="card h-100 shadow-sm hoverable">
                 <div class="card-body">
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2"
+                    class="d-flex justify-content-between align-items-center mb-2 flex-wrap project-links"
                   >
                     <h5 class="card-title mb-0">
                       MRI Brain Tumor Detection System (2025)
                     </h5>
-                    <div>
+                    <div class="d-flex flex-row flex-wrap align-items-center">
                       <a
                         href="https://github.com/Shihabul-Shuvo/MRI_Brain_Tumer_Detection"
                         target="_blank"
-                        class="btn btn-outline-primary btn-sm ml-1"
+                        class="btn btn-outline-primary btn-sm ml-1 project-link"
                         title="GitHub"
                       >
                         <i class="fab fa-github"></i>
@@ -305,7 +326,7 @@
                       <a
                         href=""
                         target="_blank"
-                        class="btn btn-outline-danger btn-sm ml-1"
+                        class="btn btn-outline-danger btn-sm ml-1 project-link"
                         title="YouTube"
                       >
                         <i class="fab fa-youtube"></i>
@@ -313,7 +334,7 @@
                       <a
                         href=""
                         target="_blank"
-                        class="btn btn-outline-secondary btn-sm ml-1"
+                        class="btn btn-outline-secondary btn-sm ml-1 project-link"
                         title="Project Report"
                       >
                         <i class="fas fa-file-alt"></i>
@@ -339,14 +360,14 @@
               <div class="card h-100 shadow-sm hoverable">
                 <div class="card-body">
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2"
+                    class="d-flex justify-content-between align-items-center mb-2 flex-wrap project-links"
                   >
                     <h5 class="card-title mb-0">Exclusive Shop (2025)</h5>
-                    <div>
+                    <div class="d-flex flex-row flex-wrap align-items-center">
                       <a
                         href="https://github.com/Shihabul-Shuvo/Exclusive_Shop"
                         target="_blank"
-                        class="btn btn-outline-primary btn-sm ml-1"
+                        class="btn btn-outline-primary btn-sm ml-1 project-link"
                         title="GitHub"
                       >
                         <i class="fab fa-github"></i>
@@ -354,7 +375,7 @@
                       <a
                         href=""
                         target="_blank"
-                        class="btn btn-outline-danger btn-sm ml-1"
+                        class="btn btn-outline-danger btn-sm ml-1 project-link"
                         title="YouTube"
                       >
                         <i class="fab fa-youtube"></i>
@@ -362,7 +383,7 @@
                       <a
                         href=""
                         target="_blank"
-                        class="btn btn-outline-secondary btn-sm ml-1"
+                        class="btn btn-outline-secondary btn-sm ml-1 project-link"
                         title="Project Report"
                       >
                         <i class="fas fa-file-alt"></i>
@@ -389,14 +410,14 @@
               <div class="card h-100 shadow-sm hoverable">
                 <div class="card-body">
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2"
+                    class="d-flex justify-content-between align-items-center mb-2 flex-wrap project-links"
                   >
                     <h5 class="card-title mb-0">EasyHome (2023)</h5>
-                    <div>
+                    <div class="d-flex flex-row flex-wrap align-items-center">
                       <a
                         href="https://github.com/Shihabul-Shuvo/EasyHome"
                         target="_blank"
-                        class="btn btn-outline-primary btn-sm ml-1"
+                        class="btn btn-outline-primary btn-sm ml-1 project-link"
                         title="GitHub"
                       >
                         <i class="fab fa-github"></i>
@@ -404,7 +425,7 @@
                       <a
                         href=""
                         target="_blank"
-                        class="btn btn-outline-danger btn-sm ml-1"
+                        class="btn btn-outline-danger btn-sm ml-1 project-link"
                         title="YouTube"
                       >
                         <i class="fab fa-youtube"></i>
@@ -412,7 +433,7 @@
                       <a
                         href=""
                         target="_blank"
-                        class="btn btn-outline-secondary btn-sm ml-1"
+                        class="btn btn-outline-secondary btn-sm ml-1 project-link"
                         title="Project Report"
                       >
                         <i class="fas fa-file-alt"></i>
@@ -439,19 +460,18 @@
               <div class="card h-100 shadow-sm hoverable">
                 <div class="card-body">
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2"
+                    class="d-flex justify-content-between align-items-center mb-2 flex-wrap project-links"
                   >
                     <h5 class="card-title mb-0">
                       Study on Benchmark Datasets for Human Disease Genes (2024)
                     </h5>
-                    <div>
+                    <div class="d-flex flex-row flex-wrap align-items-center">
                       <span
-                        class="btn btn-outline-primary btn-sm ml-1"
+                        class="btn btn-outline-primary btn-sm ml-1 project-link"
                         title="Academic Thesis"
                       >
                         <i><b>Academic Thesis</b></i>
                       </span>
-
                     </div>
                   </div>
                   <p class="text-muted t mb-1">
@@ -497,13 +517,7 @@
           rel="noopener noreferrer"
           >al-folio</a
         >
-        theme. Hosted by
-        <a
-          href="https://pages.github.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub Pages</a
-        >.
+        theme.
       </div>
     </footer>
 
