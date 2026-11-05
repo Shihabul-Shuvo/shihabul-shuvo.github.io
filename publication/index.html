@@ -7,9 +7,9 @@
   <title>Md Shihabul Islam Shovo | Publications</title>
   <meta name="author" content="Md Shihabul Islam Shovo" />
   <meta name="description"
-    content="Peer-reviewed and in-progress research by Md Shihabul Islam Shovo across medical imaging, wearable biosignals, and lightweight deep learning — with NIMISHES Lab and ELITE Research Lab." />
+    content="Peer-reviewed and in-progress research by Md Shihabul Islam Shovo across medical imaging, wearable biosignals, lightweight deep learning, foundation-model adaptation, and vision-language agents — with NIMISHES Lab and ELITE Research Lab." />
   <meta name="keywords"
-    content="Md Shihabul Islam Shovo, publications, IEEE, medical imaging, deep learning, EEG, wearable, Mamba, U-Net" />
+    content="Md Shihabul Islam Shovo, publications, IEEE, WACV, medical imaging, deep learning, EEG, wearable, Mamba, U-Net, LoRA, vision-language models, underwater vision" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://shihabul-shuvo.github.io/publication/" />
@@ -70,31 +70,99 @@
     <div class="container page-head">
       <h1 class="sr-only">Publications</h1>
       <p>Research with <strong>NIMISHES Lab</strong> and <strong>ELITE Research Lab</strong>, spanning medical
-        imaging, wearable biosignals, and lightweight, explainable deep learning. My name is bolded in the author
-        list on each paper.</p>
+        imaging, wearable biosignals, lightweight and explainable deep learning, parameter-efficient adaptation of
+        foundation models, and the reliability of agentic vision-language systems. My name is bolded in the author
+        list on each paper; AquaProbe leads the accepted list, with other first-author papers listed first in each group.</p>
       <div class="stats stats-3">
-        <div class="stat"><div class="num num-accepted">3</div><div class="label">Accepted</div></div>
-        <div class="stat"><div class="num num-review">2</div><div class="label">Under Review</div></div>
-        <div class="stat"><div class="num num-prep">2</div><div class="label">In Preparation</div></div>
+        <div class="stat"><div class="num num-accepted">4</div><div class="label">Accepted</div></div>
+        <div class="stat"><div class="num num-review">6</div><div class="label">Under Review</div></div>
+        <div class="stat"><div class="num num-prep">1</div><div class="label">In Preparation</div></div>
       </div>
     </div>
 
     <div class="container section">
-      <h2>Accepted <span class="muted" style="font-weight:500; font-size:1rem;">(3 &mdash; peer-reviewed, IEEE
-          conferences)</span></h2>
+      <h2>Accepted <span class="muted" style="font-weight:500; font-size:1rem;">(4 &mdash; peer-reviewed, IEEE
+          conferences and IEEE/CVF workshops)</span></h2>
       <div class="card-stack">
 
         <div class="card">
           <div class="card-head">
-            <h3><a href="https://nimishes-lab.vercel.app/papers/SleepEffFormer.pdf" target="_blank">SleepEffFormer:
+            <h3><a href="https://arxiv.org/abs/2610.40900" target="_blank" rel="noopener noreferrer">AquaProbe: Efficient Adaptation of Frozen Vision Models for Underwater Images</a></h3>
+            <span class="pill pill-accepted">Accepted</span>
+          </div>
+          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
+            Paul, Trung Dong, Xiaomin Lin (NIMISHES Lab &middot; University of South Florida)</p>
+          <p class="muted"><em>5th Workshop on Maritime Computer Vision (MaCVi), IEEE/CVF Winter Conference on
+              Applications of Computer Vision (WACV 2027)</em></p>
+          <p>A degradation-conditioned probe that measures where the underwater domain gap grows inside a frozen
+            vision encoder, then splits a fixed LoRA rank budget across blocks in proportion to that measured
+            profile. Clean RGB-D scenes are physically re-rendered across 10 Jerlov water types and 4 imaging ranges,
+            and per-block CKA divergence (rather than the usual cumulative curve) shows where new divergence is
+            introduced.</p>
+          <ul>
+            <li>70.1 mIoU on SUIM with profile-proportional LoRA allocation (DINOv2 ViT-B/14) &mdash; +1.9 mIoU over
+              uniform allocation at the same 0.59M adapter-parameter budget</li>
+            <li>Uniform allocation needs 4x the adapter parameters to match it</li>
+            <li>Also +1.5 mIoU on SUIM with SAM ViT-B and +1.5 mIoU on TrashCan at equal budget</li>
+            <li>Condition-routed variant: 70.6 mIoU on SUIM and 63.4 AUDRC under a held-out degradation range</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Underwater vision</span><span class="tag">LoRA</span><span
+              class="tag">Parameter-efficient fine-tuning</span><span class="tag">Vision transformers</span><span
+              class="tag">Domain shift</span><span class="tag">Segmentation</span>
+          </div>
+          <div class="link-row">
+            <a class="chip-link" href="https://arxiv.org/abs/2610.40900" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2610.40900" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> Read PDF</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3><a href="https://arxiv.org/abs/2609.22147" target="_blank">WaveFoG: Wavelet-Gated
+                Transformer for Parkinson's Freezing of Gait Detection Using Wearable Accelerometer Signals</a></h3>
+            <span class="pill pill-accepted">Accepted</span>
+          </div>
+          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
+            Paul, Adrita Rahman, Israt Jerin Esha</p>
+          <p class="muted"><em>5th IEEE Int. Conf. on Biomedical Engineering, Computer and Information Technology for
+              Health (BECITHCON 2026)</em>, Dhaka, Bangladesh, 4&ndash;5 September 2026</p>
+          <p>A dual-branch CNN-Transformer that fuses discrete wavelet sub-band descriptors through a sigmoid gating
+            layer to detect freezing-of-gait episodes from wrist-worn accelerometers under severe class imbalance.
+          </p>
+          <ul>
+            <li>F1 0.875 &plusmn; 0.017 and AUPRC 0.833 &plusmn; 0.020 on the Kaggle TLVMC FoG dataset</li>
+            <li>Subject-independent grouped ten-fold cross-validation</li>
+            <li>Up to +5.4pp F1 over 1D CNN, Bi-LSTM, and vanilla Transformer baselines</li>
+            <li>Temporal saliency maps align with reported FoG onset characteristics</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Freezing of gait</span><span class="tag">Parkinson's disease</span><span
+              class="tag">Wearable IMU</span><span class="tag">Wavelet transform</span><span class="tag">Focal
+              loss</span>
+          </div>
+          <div class="link-row">
+            <a class="chip-link" href="https://arxiv.org/abs/2609.22147" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2609.22147" target="_blank"><i
+                class="fas fa-file-pdf"></i> Read PDF</a>
+            <a class="chip-link" href="https://github.com/Shihabul-Shuvo/WaveFoG" target="_blank"><i
+                class="fab fa-github"></i> Source</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3><a href="https://arxiv.org/abs/2609.22148" target="_blank">SleepEffFormer:
                 Efficient CNN-Transformer with Transition-Aware Smoothing for Single-Channel EEG Sleep Stage
                 Classification</a></h3>
             <span class="pill pill-accepted">Accepted</span>
           </div>
           <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Israt Jerin Esha,
             Adrita Rahman</p>
-          <p class="muted"><em>5th IEEE Int. Conf. on Biomedical Engineering, Computer and Information Technology for
-              Health (BECITHCON 2026)</em>, Dhaka, Bangladesh, 4&ndash;5 September 2026</p>
+          <p class="muted"><em>5th IEEE BECITHCON 2026</em>, Dhaka, Bangladesh, 4&ndash;5 September 2026</p>
           <p>A lightweight CNN-Transformer for automated sleep staging from a single EEG channel, paired with a
             non-parametric Transition-Aware Smoothing (TAS) layer that suppresses physiologically implausible stage
             transitions.</p>
@@ -111,7 +179,9 @@
               class="tag">Explainability</span><span class="tag">Lightweight DL</span>
           </div>
           <div class="link-row">
-            <a class="chip-link" href="https://nimishes-lab.vercel.app/papers/SleepEffFormer.pdf" target="_blank"><i
+            <a class="chip-link" href="https://arxiv.org/abs/2609.22148" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2609.22148" target="_blank"><i
                 class="fas fa-file-pdf"></i> Read PDF</a>
             <a class="chip-link" href="https://github.com/Nishi-Kanta-Paul/SleepStage" target="_blank"><i
                 class="fab fa-github"></i> Source</a>
@@ -120,38 +190,7 @@
 
         <div class="card">
           <div class="card-head">
-            <h3><a href="https://nimishes-lab.vercel.app/papers/WaveFoG.pdf" target="_blank">WaveFoG: Wavelet-Gated
-                Transformer for Parkinson's Freezing of Gait Detection Using Wearable Accelerometer Signals</a></h3>
-            <span class="pill pill-accepted">Accepted</span>
-          </div>
-          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
-            Paul, Adrita Rahman, Israt Jerin Esha</p>
-          <p class="muted"><em>5th IEEE BECITHCON 2026</em>, Dhaka, Bangladesh, 4&ndash;5 September 2026</p>
-          <p>A dual-branch CNN-Transformer that fuses discrete wavelet sub-band descriptors through a sigmoid gating
-            layer to detect freezing-of-gait episodes from wrist-worn accelerometers under severe class imbalance.
-          </p>
-          <ul>
-            <li>F1 0.875 &plusmn; 0.017 and AUPRC 0.833 &plusmn; 0.020 on the Kaggle TLVMC FoG dataset</li>
-            <li>Subject-independent grouped ten-fold cross-validation</li>
-            <li>Up to +5.4pp F1 over 1D CNN, Bi-LSTM, and vanilla Transformer baselines</li>
-            <li>Temporal saliency maps align with reported FoG onset characteristics</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Freezing of gait</span><span class="tag">Parkinson's disease</span><span
-              class="tag">Wearable IMU</span><span class="tag">Wavelet transform</span><span class="tag">Focal
-              loss</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://nimishes-lab.vercel.app/papers/WaveFoG.pdf" target="_blank"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-            <a class="chip-link" href="https://github.com/Shihabul-Shuvo/WaveFoG" target="_blank"><i
-                class="fab fa-github"></i> Source</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-head">
-            <h3><a href="https://nimishes-lab.vercel.app/papers/DR-LiteNet.pdf" target="_blank">DR-LiteNet: A
+            <h3><a href="https://arxiv.org/abs/2611.04405" target="_blank">DR-LiteNet: A
                 Lightweight Explainable Hybrid CNN Framework for Imbalanced Diabetic Retinopathy Grading via Adaptive
                 SMOTE Fusion</a></h3>
             <span class="pill pill-accepted">Accepted</span>
@@ -174,7 +213,9 @@
               class="tag">ADASYN</span><span class="tag">EfficientNet</span><span class="tag">Grad-CAM</span>
           </div>
           <div class="link-row">
-            <a class="chip-link" href="https://nimishes-lab.vercel.app/papers/DR-LiteNet.pdf" target="_blank"><i
+            <a class="chip-link" href="https://arxiv.org/abs/2611.04405" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2611.04405" target="_blank" rel="noopener noreferrer"><i
                 class="fas fa-file-pdf"></i> Read PDF</a>
           </div>
         </div>
@@ -183,9 +224,144 @@
     </div>
 
     <div class="container section">
-      <h2>Under Review <span class="muted" style="font-weight:500; font-size:1rem;">(2 &mdash; 29th IEEE ICCIT
-          2026)</span></h2>
+      <h2>Under Review <span class="muted" style="font-weight:500; font-size:1rem;">(6 &mdash; 1 IEEE JBHI, 3 IEEE ISBI 2027, 1 IEEE/CVF
+          WACV 2027 FABRIC Workshop, 1 IEEE ICCIT 2026)</span></h2>
       <div class="card-stack">
+
+        <div class="card">
+          <div class="card-head">
+            <h3><a href="https://arxiv.org/abs/2611.04409" target="_blank">LCM-UNet: A
+                Reparameterizable Local-Compensated Mamba U-Net for Skin Lesion Segmentation</a></h3>
+            <span class="pill pill-review">Under review</span>
+          </div>
+          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
+            Paul, Kishor Morol</p>
+          <p class="muted"><em>IEEE Journal of Biomedical and Health Informatics (JBHI)</em> &mdash; Q1, IF 7.7</p>
+          <p>Strengthens the local pathway of an ultra-compact state-space segmentation network with a
+            zero-initialized dilated depthwise adapter (RDLA) that merges exactly into a single kernel after
+            training &mdash; more capacity during learning, an unchanged graph at inference.</p>
+          <ul>
+            <li>34,180 parameters and 0.05974 GFLOPs after reparameterization &mdash; 4 parameters more than the
+              reference, identical cost</li>
+            <li>+0.48 / +0.37pp IoU and +0.29 / +0.22pp DSC over a retrained reference backbone on ISIC 2017 and ISIC
+              2018</li>
+            <li>External PH2 transfer: 86.37% &plusmn; 0.29 IoU vs. 85.91% &plusmn; 0.29 for the reference</li>
+            <li>Fused and unfused models emit identical masks to numerical tolerance; image-level Wilcoxon
+              significant at p &lt; 1e-4</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Skin lesion segmentation</span><span class="tag">State-space model</span><span
+              class="tag">Mamba</span><span class="tag">Reparameterization</span><span class="tag">U-Net</span>
+          </div>
+          <div class="link-row">
+            <a class="chip-link" href="https://arxiv.org/abs/2611.04409" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2611.04409" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> Read PDF</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3><a href="https://arxiv.org/abs/2610.29740" target="_blank" rel="noopener noreferrer">APED-CXR: Adaptive
+                Privileged Evidence Distillation for Chest X-Ray Grounding with Image-Only Inference</a></h3>
+            <span class="pill pill-review">Under review</span>
+          </div>
+          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
+            Paul, Jamil Fayyad (NIMISHES Lab &middot; American University of Sharjah)</p>
+          <p class="muted"><em>IEEE International Symposium on Biomedical Imaging (ISBI) 2027</em> &mdash; submitted;
+            preprint arXiv:2610.29740, 21 October 2026</p>
+          <p>An 11.1M-parameter student learns report-informed spatial evidence from a frozen multimodal teacher.
+            During training, the teacher verifies regions proposed from the student's current evidence maps using
+            the image, report, and queried class. The student predicts disease labels and bounding boxes using only
+            the image at inference.</p>
+          <ul>
+            <li>PadChest-GR box-level micro-gF1: 0.338 &plusmn; 0.018 versus 0.302 &plusmn; 0.005 with fixed warm-up
+              proposals (IoU &ge; 0.5); paired gain 0.036, 95% CI [0.022, 0.049], across five seeds</li>
+            <li>Diagnostic macro-AUC 0.815; NIH ChestX-ray14 secondary box-recall check: 0.447 versus 0.423</li>
+            <li>11.1M parameters, 5.7 GMACs, and 9.6 ms per image on an A100 (batch size 1), including box extraction</li>
+            <li>Teacher and reports are training-only; adaptive supervision costs 34.4 teacher GPU-hours per seed
+              versus 5.9 for fixed proposals. NIH is not independent external validation because it was used to
+              train the teacher.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Chest X-ray</span><span class="tag">Knowledge distillation</span><span
+              class="tag">Privileged information</span><span class="tag">Visual grounding</span><span
+              class="tag">Image-only inference</span>
+          </div>
+          <div class="link-row">
+            <a class="chip-link" href="https://arxiv.org/abs/2610.29740" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2610.29740" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> Read PDF</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3><a href="https://arxiv.org/abs/2611.01548" target="_blank" rel="noopener noreferrer">Band2Net: Frequency-to-Network Transport Distillation for fMRI-Privileged, EEG-Only Session-Condition Decoding</a></h3>
+            <span class="pill pill-review">Under review</span>
+          </div>
+          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Dwarikanath Mahapatra</p>
+          <p class="muted"><em>IEEE International Symposium on Biomedical Imaging (ISBI) 2027</em></p>
+          <div class="link-row">
+            <a class="chip-link" href="https://arxiv.org/abs/2611.01548" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2611.01548" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> Read PDF</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3><a href="https://arxiv.org/abs/2610.40722" target="_blank" rel="noopener noreferrer">LAPIS: Clinically Constrained Patient-Identity Residual Learning for Chest X-Ray Anonymization</a></h3>
+            <span class="pill pill-review">Under review</span>
+          </div>
+          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Désiré Sidibé</p>
+          <p class="muted"><em>IEEE International Symposium on Biomedical Imaging (ISBI) 2027</em></p>
+          <div class="link-row">
+            <a class="chip-link" href="https://arxiv.org/abs/2610.40722" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2610.40722" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> Read PDF</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3><a href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer">Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems</a></h3>
+            <span class="pill pill-review">Under review</span>
+          </div>
+          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Md Mostafijur Rahman,
+            Jamil Fayyad</p>
+          <p class="muted"><em>Workshop on Foundation AI for Biomedical Reasoning, Imaging, and Cognition (FABRIC),
+              IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)</em></p>
+          <p>Tests whether tool-using vision-language agents are actually safer than single-shot models when the tool
+            channel (segmentation and contrastive retrieval) and the reasoning channel (an iterative VLM reasoner)
+            share one visual fault. Introduces a coupling taxonomy and proves that, under a binary decision, a
+            hard-label consistency check can never catch joint failures.</p>
+          <ul>
+            <li>Dermatology agent evaluated on PAD-UFES-20 and an independent external HIBA test set, with two
+              open-weight 7B reasoners (Qwen2.5-VL, LLaVA-Med) and three contrastive encoders</li>
+            <li>Typographic prompt injection produces detectable directional retrieval capture; physical corruption
+              does not</li>
+            <li>Pipeline order alone decides the failure type: crop-first retrieval gives 55% joint wrong agreement
+              vs. 35% for full-image retrieval</li>
+            <li>Disagreement recall limited to 0.29 (crop-first) vs. 0.57 (full-image); effect reproduced on the
+              external test set</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Agentic AI</span><span class="tag">Vision-language models</span><span
+              class="tag">Medical VLM safety</span><span class="tag">Prompt injection</span><span
+              class="tag">Dermatology</span>
+          </div>
+          <div class="link-row">
+            <a class="chip-link" href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> arXiv</a>
+            <a class="chip-link" href="https://arxiv.org/pdf/2610.40913" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-file-pdf"></i> Read PDF</a>
+          </div>
+        </div>
 
         <div class="card">
           <div class="card-head">
@@ -195,6 +371,7 @@
             <span class="pill pill-review">Under review</span>
           </div>
           <p class="muted">Authors: NIMISHES Lab (incl. <strong>Md Shihabul Islam Shovo</strong>)</p>
+          <p class="muted"><em>29th IEEE Int. Conf. on Computer and Information Technology (ICCIT 2026)</em></p>
           <p>Replaces fixed late-fusion rules with a lightweight two-layer MLP attention gate that produces
             input-adaptive weights for ResNet50, InceptionV3, and DenseNet201, resolving the inter-model feature
             conflict where one backbone dominates the fused decision.</p>
@@ -215,70 +392,13 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-head">
-            <h3><a href="https://nimishes-lab.vercel.app/papers/PDGuard.pdf" target="_blank">PDGuard: A CNN-BiLSTM
-                Attention Network for Wearable IMU-Based Parkinson's Disease Detection</a></h3>
-            <span class="pill pill-review">Under review</span>
-          </div>
-          <p class="muted">Authors: NIMISHES Lab (incl. <strong>Md Shihabul Islam Shovo</strong>)</p>
-          <p>A compact 1D-convolution, bidirectional LSTM, and multi-head self-attention network that classifies raw
-            wrist-worn accelerometer and gyroscope streams, targeting frequent monitoring outside the clinic.</p>
-          <ul>
-            <li>88.34% &plusmn; 1.01 accuracy, 83.79% balanced accuracy, pooled held-out ROC-AUC 0.918 on the PADS
-              cohort (469 participants)</li>
-            <li>77.34% accuracy on the harder PD vs. differential-diagnosis task</li>
-            <li>Strictly subject-disjoint five-fold cross-validation</li>
-            <li>1.24M parameters, 18.3 ms per 4.8s window on CPU &mdash; smartphone-class deployment</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Parkinson's disease</span><span class="tag">IMU</span><span class="tag">CNN</span><span
-              class="tag">Bi-LSTM</span><span class="tag">Wearable health</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://nimishes-lab.vercel.app/papers/PDGuard.pdf" target="_blank"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
 
       </div>
     </div>
 
     <div class="container section">
-      <h2>In Preparation <span class="muted" style="font-weight:500; font-size:1rem;">(2 &mdash; targeting late
-          2026)</span></h2>
+      <h2>In Preparation <span class="muted" style="font-weight:500; font-size:1rem;">(1)</span></h2>
       <div class="card-stack">
-
-        <div class="card">
-          <div class="card-head">
-            <h3><a href="https://nimishes-lab.vercel.app/papers/LCM-UNet.pdf" target="_blank">LCM-UNet: A
-                Reparameterizable Local-Compensated Mamba U-Net for Skin Lesion Segmentation</a></h3>
-            <span class="pill pill-prep">In preparation</span>
-          </div>
-          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
-            Paul, Kishor Morol</p>
-          <p class="muted"><em>Target: journal manuscript, target submission September 2026</em></p>
-          <p>Strengthens the local pathway of an ultra-compact state-space segmentation network with a
-            zero-initialized dilated depthwise adapter (RDLA) that merges exactly into a single kernel after
-            training &mdash; more capacity during learning, an unchanged graph at inference.</p>
-          <ul>
-            <li>34,180 parameters and 0.05974 GFLOPs after reparameterization &mdash; 4 parameters more than the
-              reference, identical cost</li>
-            <li>+0.48 / +0.37pp IoU and +0.29 / +0.22pp DSC over a retrained reference backbone on ISIC 2017 and ISIC
-              2018</li>
-            <li>External PH2 transfer: 86.37% &plusmn; 0.29 IoU vs. 85.91% &plusmn; 0.29 for the reference</li>
-            <li>Fused and unfused models emit identical masks to numerical tolerance; image-level Wilcoxon
-              significant at p &lt; 1e-4</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Skin lesion segmentation</span><span class="tag">State-space model</span><span
-              class="tag">Mamba</span><span class="tag">Reparameterization</span><span class="tag">U-Net</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://nimishes-lab.vercel.app/papers/LCM-UNet.pdf" target="_blank"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
 
         <div class="card">
           <div class="card-head">
