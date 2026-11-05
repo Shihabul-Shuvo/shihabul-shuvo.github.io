@@ -36,7 +36,7 @@
 | 21 Oct 2026 | APED-CXR (first author) posted as arXiv:2610.29740; submitted to IEEE ISBI 2027 | Publication |
 | Nov 2026 (status update) | AquaProbe (first author) accepted at the MaCVi Workshop, IEEE/CVF WACV 2027 | Publication |
 | Nov 2026 (status update) | Band2Net and LAPIS under review at IEEE ISBI 2027; public arXiv links added for both and Coupled or Independent? | Publication |
-| WACV 2027 (target) | CoMAF-Polyp — target: WACV 2027 Workshop (CVF) | Publication |
+| MIDL 2027 (planned submission) | CoMAF-Polyp — target: Medical Imaging with Deep Learning (MIDL) 2027 | Publication |
 
 *Note: most entries only have month/year precision as given on the CVs and LinkedIn; exact days are not tracked except where stated (e.g. Servercamp start date, BECITHCON conference dates).*
 
@@ -194,11 +194,11 @@ Key results:
 - Better cross-dataset generalisation on an external CXR corpus
 Tags: Chest radiography, ensemble learning, attention, feature fusion, COVID-19.
 
-### In Preparation (1) — targeting submission in late 2026
+### In Preparation (1) — planned submission to MIDL 2027
 
 **[P1] CoMAF-Polyp: Calibrated Reliability-Aware Fusion of Specialist and Foundation Pseudo-Labels for Semi-Supervised Polyp Segmentation**
 Authors: Nishi Kanta Paul, **Md Shihabul Islam Shovo**, Camila Gonzalez (Medical University of Vienna)
-Target: WACV 2027 Workshop (Computer Vision Foundation).
+Target: Medical Imaging with Deep Learning (MIDL) 2027 — planned submission.
 arXiv: Not available (confirmed by the author on 6 November 2026).
 Summary: A calibration-aware adaptive fusion framework ("Consensus of Multi-source Adaptive Fusion") for pseudo-label generation in semi-supervised polyp segmentation from colonoscopy. Fuses candidates from a domain-adapted EMA specialist and a frozen SAM-Med2D foundation model, gated by a 5-descriptor reliability score (agreement, entropy, boundary confidence, shape plausibility, prediction stability) via a calibrated 1.4K-parameter MLP gate.
 Key results:
@@ -323,7 +323,6 @@ GitHub: https://github.com/Shihabul-Shuvo/Lift
 - Confirm whether the live-demo link (eshopget.netlify.app) belongs to Hospital Management System or Exclusive Shop.
 - "In Preparation" publication count on LinkedIn says (3) but only 2 are tracked here (LCM-UNet, CoMAF-Polyp) — confirm if a third exists.
 - No Google Scholar profile currently listed — add if one exists.
-- CoMAF-Polyp still lists "WACV 2027 Workshop" as its target, but it was not among the Oct 2026 WACV workshop submissions — confirm its current status and target venue. (Dropped from the RA CV in Oct 2026 along with the whole In Preparation section; kept here and on the portfolio.)
 - The RA CV still lists the Ostad Full Stack course as "Oct 2025 – Ongoing" although a certificate of completion exists — update it there (and on the other role-based CVs) when convenient.
 - arXiv availability confirmed on 6 November 2026: AquaProbe (2610.40900), DR-LiteNet (2611.04405), and LCM-UNet (2611.04409) are available and linked above; AWEF-Net and CoMAF-Polyp have no arXiv version available. Coupled or Independent? remains linked as arXiv:2610.40913.
 - Multi-Tenant SaaS Project Management Platform repo (https://github.com/Shihabul-Shuvo/Multi-Tenant-SaaS-Project-Management-Platform) was empty as of Sept 2026 — it's already listed on the Django-focused CV on the understanding the code will be pushed soon. Push the code and update this note once done.
