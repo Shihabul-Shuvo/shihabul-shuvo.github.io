@@ -213,7 +213,7 @@ html[data-theme='dark'] #theme-toggle .fa-moon { display: none; }
 }
 .profile-avatar {
   position: relative; width: 116px; height: 116px; border-radius: 50%;
-  object-fit: cover; border: 3px solid var(--bg); box-shadow: var(--shadow);
+  object-fit: cover; object-position: center 22%; border: 3px solid var(--bg); box-shadow: var(--shadow);
 }
 .profile-card h1 { font-size: 1.32rem; margin-bottom: 4px; }
 .profile-tagline { color: var(--text-soft); font-weight: 600; font-size: .87rem; margin-bottom: 10px; }
