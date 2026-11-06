@@ -12,6 +12,10 @@
 - **Portfolio:** https://shihabul-shuvo.github.io/
 - **Location:** Dhaka, Bangladesh
 
+## Research Profile Summary
+
+Computer Science graduate and Research Assistant with experience in deep learning, computer vision, and AI research. Worked on developing and evaluating machine learning models, conducting experiments, and contributing to research publications across medical imaging and related areas. Experienced with Python, PyTorch, TensorFlow, and statistical model evaluation, with an interest in exploring new research problems and collaborating on impactful AI research.
+
 ## Timeline (Chronological)
 
 | Date | Event | Category |
@@ -27,7 +31,7 @@
 | 2026 – Present | Lead Researcher, NIMISHES Lab | Research Experience |
 | May 2026 – Ongoing | Servercamp, Astha IT (backend development, C#/ASP.NET/SQL) | Course |
 | Jun 2026 – Aug 2026 | Research Intern, ELITE Research Lab LLC | Research Experience |
-| Aug 2026 – Present | Junior Research Assistant, ELITE Research Lab LLC (promoted from Research Intern) | Research Experience |
+| Aug 2026 – Present | Research Assistant, ELITE Research Lab LLC (promoted from Research Intern) | Research Experience |
 | 22 Jun – 3 Jul 2026 | Artificial Intelligence Technologies 2026 (VI) Summer School, Ivan Franko National University of Lviv — 120 hours / 4 ECTS | Course |
 | 4–5 Sept 2026 | SleepEffFormer and WaveFoG presented at 5th IEEE BECITHCON 2026, Dhaka | Publication |
 | 2026 | DR-LiteNet accepted at 1st IEEE iCONEECT 2026 | Publication |
@@ -36,7 +40,6 @@
 | 21 Oct 2026 | APED-CXR (first author) posted as arXiv:2610.29740; submitted to IEEE ISBI 2027 | Publication |
 | Nov 2026 (status update) | AquaProbe (first author) accepted at the MaCVi Workshop, IEEE/CVF WACV 2027 | Publication |
 | Nov 2026 (status update) | Band2Net and LAPIS under review at IEEE ISBI 2027; public arXiv links added for both and Coupled or Independent? | Publication |
-| MIDL 2027 (planned submission) | CoMAF-Polyp — target: Medical Imaging with Deep Learning (MIDL) 2027 | Publication |
 
 *Note: most entries only have month/year precision as given on the CVs and LinkedIn; exact days are not tracked except where stated (e.g. Servercamp start date, BECITHCON conference dates).*
 
@@ -48,17 +51,17 @@
 ## Research Experience
 
 ### ELITE Research Lab LLC — Queens, NY, USA (Remote) · Part-time
-- **Junior Research Assistant** — Aug 2026 – Present (2 mos as of Sep 2026)
+- **Research Assistant** — Aug 2026 – Present (2 mos as of Sep 2026)
 - **Research Intern** — Jun 2026 – Present / promoted Aug 2026 (4 mos total tenure)
 - **Project: LCM-UNet — Lightweight Skin Lesion Segmentation using a Mamba-based U-Net**
   - Ultra-lightweight (~34K parameters, 0.06 GFLOPs) skin lesion segmentation network built on a Mamba-based state-space U-Net backbone, designed to detect melanoma-related lesion boundaries in dermoscopic images for deployment on low-cost, point-of-care hardware.
   - Main contribution: the **Residual Dilated Local Adapter (RDLA)**, a zero-initialized dilated convolution module that adds extra optimization capacity during training but is exactly fused back into the original kernel via structural reparameterization before inference, so deployment cost stays unchanged.
   - Validated the approach with multi-seed statistical testing on ISIC 2017, ISIC 2018, and external PH2 datasets, showing consistent boundary-quality improvements over the baseline (image-level Wilcoxon significant at p < 1e-4).
-  - Promoted from Research Intern to Junior Research Assistant in recognition of research contributions.
+  - Promoted from Research Intern to Research Assistant in recognition of research contributions.
 
 ### NIMISHES Lab (Nishi Medical Imaging & Intelligent Health Engineering Systems) — Lead Researcher, 2026 – Present
 - Independent research lab (co-founded/led by collaborator Nishi Kanta Paul) building explainable, deployment-efficient AI for clinical use.
-- Contributed to 10 manuscripts spanning medical imaging (dermatology, ophthalmology, radiology), wearable biosignal analysis (EEG, IMU), and underwater computer vision: SleepEffFormer, WaveFoG, DR-LiteNet, AWEF-Net, CoMAF-Polyp, AquaProbe (first author, in collaboration with the University of South Florida), Coupled or Independent?, APED-CXR (first author, with the American University of Sharjah), Band2Net, and LAPIS.
+- Contributed to 9 manuscripts spanning medical imaging (dermatology, ophthalmology, radiology), wearable biosignal analysis (EEG, IMU), and underwater computer vision: SleepEffFormer, WaveFoG, DR-LiteNet, AWEF-Net, AquaProbe (first author, in collaboration with the University of South Florida), Coupled or Independent?, APED-CXR (first author, with the American University of Sharjah), Band2Net, and LAPIS.
 - Research has expanded into foundation-model adaptation (LoRA rank allocation for frozen ViTs) and the reliability of agentic vision-language systems for medical imaging.
 - Contributions: model design, cross-validation, statistical significance testing, Grad-CAM-based explainability analysis — consistently achieving state-of-the-art parameter efficiency versus standard backbones (ResNet50, DenseNet201, etc.).
 
@@ -159,6 +162,8 @@ Authors: Nishi Kanta Paul, **Md Shihabul Islam Shovo**, Dwarikanath Mahapatra
 Venue: IEEE International Symposium on Biomedical Imaging (ISBI) 2027 — under review.
 Preprint: [📄 arXiv](https://arxiv.org/abs/2611.01548)
 Read PDF: https://arxiv.org/pdf/2611.01548
+Summary: EEG-only ROC-AUC 0.801 on PsiConnect; +5.0 AUC points over an EEG-only student.
+
 
 **[U4] LAPIS: Clinically Constrained Patient-Identity Residual Learning for Chest X-Ray Anonymization**
 Authors: Nishi Kanta Paul, **Md Shihabul Islam Shovo**, Désiré Sidibé
@@ -194,21 +199,6 @@ Key results:
 - Better cross-dataset generalisation on an external CXR corpus
 Tags: Chest radiography, ensemble learning, attention, feature fusion, COVID-19.
 
-### In Preparation (1) — planned submission to MIDL 2027
-
-**[P1] CoMAF-Polyp: Calibrated Reliability-Aware Fusion of Specialist and Foundation Pseudo-Labels for Semi-Supervised Polyp Segmentation**
-Authors: Nishi Kanta Paul, **Md Shihabul Islam Shovo**, Camila Gonzalez (Medical University of Vienna)
-Target: Medical Imaging with Deep Learning (MIDL) 2027 — planned submission.
-arXiv: Not available (confirmed by the author on 6 November 2026).
-Summary: A calibration-aware adaptive fusion framework ("Consensus of Multi-source Adaptive Fusion") for pseudo-label generation in semi-supervised polyp segmentation from colonoscopy. Fuses candidates from a domain-adapted EMA specialist and a frozen SAM-Med2D foundation model, gated by a 5-descriptor reliability score (agreement, entropy, boundary confidence, shape plausibility, prediction stability) via a calibrated 1.4K-parameter MLP gate.
-Key results:
-- 88.46% Dice on Kvasir-SEG with 10% labels; fused pseudo-labels recover 98.6% of a per-image oracle
-- +2.44pp average Dice over the best baseline across four unseen datasets (ClinicDB, ColonDB, ETIS, CVC-300) under domain shift, degrading least on the most severely shifted set
-- Calibration reduces expected calibration error (ECE) from 0.147 to 0.038
-- Ablation shows the calibrated gate alone contributes +1.95 Dice — larger than adding the second knowledge source itself
-- Calibration remains effective with as few as 20 labeled frames for periodic re-anchoring
-- All added machinery is training-time only; deployed model is just the student segmentation network (38.2 FPS)
-Tags: Semi-supervised segmentation, polyp segmentation, pseudo-labeling, calibration, foundation models (SAM), mean-teacher.
 
 ## Professional Experience
 
@@ -321,16 +311,14 @@ GitHub: https://github.com/Shihabul-Shuvo/Lift
 
 ## Open Items / To Verify
 - Confirm whether the live-demo link (eshopget.netlify.app) belongs to Hospital Management System or Exclusive Shop.
-- "In Preparation" publication count on LinkedIn says (3) but only 2 are tracked here (LCM-UNet, CoMAF-Polyp) — confirm if a third exists.
 - No Google Scholar profile currently listed — add if one exists.
-- The RA CV still lists the Ostad Full Stack course as "Oct 2025 – Ongoing" although a certificate of completion exists — update it there (and on the other role-based CVs) when convenient.
-- arXiv availability confirmed on 6 November 2026: AquaProbe (2610.40900), DR-LiteNet (2611.04405), and LCM-UNet (2611.04409) are available and linked above; AWEF-Net and CoMAF-Polyp have no arXiv version available. Coupled or Independent? remains linked as arXiv:2610.40913.
+- arXiv availability confirmed on 6 November 2026: AquaProbe (2610.40900), DR-LiteNet (2611.04405), and LCM-UNet (2611.04409) are available and linked above; AWEF-Net has no arXiv version available. Coupled or Independent? remains linked as arXiv:2610.40913.
 - Multi-Tenant SaaS Project Management Platform repo (https://github.com/Shihabul-Shuvo/Multi-Tenant-SaaS-Project-Management-Platform) was empty as of Sept 2026 — it's already listed on the Django-focused CV on the understanding the code will be pushed soon. Push the code and update this note once done.
 
 ## CV Variants Generated From This Profile
 - `shovo_cv_updated.tex` — Research Assistant-focused CV (publications and research experience emphasized, software projects condensed).
-- `Shovo_s_CV/RA n TA/Md_Shihabul_Islam_Shovo_BSc_in_CSE_RA.tex` — RA/TA application CV, kept to 2 pages. Nov 2026 update: 4 accepted and 6 under review; AquaProbe accepted at MaCVi, APED-CXR/Band2Net/LAPIS under review at ISBI, and Coupled or Independent? under review at FABRIC with corrected author order and an arXiv link. AquaProbe leads the accepted list; first-author papers remain first in each group; In Preparation remains omitted from this CV. Project entries retained per the author’s request on 6 November 2026; available arXiv links use PDF icons.
+- `Shovo_s_CV/RA n TA/Md_Shihabul_Islam_Shovo_BSc_in_CSE_RA.tex` — RA/TA application CV, kept to 2 pages. Nov 2026 update: 4 accepted and 6 under review; AquaProbe accepted at MaCVi, APED-CXR/Band2Net/LAPIS under review at ISBI, and Coupled or Independent? under review at FABRIC with corrected author order and an arXiv link. AquaProbe leads the accepted list; first-author papers remain first in each group; Software Development Projects removed on 6 November 2026. Two-page design: research and qualifications on page 1, spaced publication entries with concise results on page 2. The MRI project is retained; available arXiv links use PDF icons. Both certificate links are included and the Ostad course is marked completed.
 - `shovo_cv_junior_swe.tex` — Junior Software Development-focused CV (skills/projects/professional experience emphasized, research condensed to a brief mention).
 - `Md_Shihabul_Islam_Shovo_Junior_Software_Developer.tex` — Job-specific application CV for a Canada-based real estate company's remote Junior Software Developer role (Sept 2026). Leads with C#/.NET + React (job's preferred stack), reorders EasyHome (a house-rental system) to the top project since it maps directly to real estate, and adds an explicit line about enthusiasm for AI-assisted development per the JD's ask.
 - `Md_Shihabul_Islam_Shovo_Product_Management_Trainee.tex` — Job-specific application CV for a Product Management Trainee role at Bondstein (Sept 2026). Reframes the same underlying experience around the JD's five traits (ownership, attention to detail, analytical mindset, curiosity, cross-team communication) — technical skills condensed, research/professional experience and projects rewritten to foreground requirements definition, testing/QA, bug handling, and dev/non-technical communication instead of raw tech stack.
-- `Md_Shihabul_Islam_Shovo_Full_Resume.tex` — Comprehensive, non-job-specific master resume for the portfolio site (Sept 2026). Nov 2026 update: 4 accepted, 6 under review, and 1 in preparation (11 papers overall); AquaProbe accepted at MaCVi, APED-CXR/Band2Net/LAPIS under review at ISBI, and Coupled or Independent? under review at FABRIC with corrected author order and arXiv links. Not length-constrained like the application CVs: includes full education history (SSC/HSC/BSc), complete technical skills, both professional and research experience in full detail, all 11 publications with available PDF/GitHub links and result bullets, all 7 software projects with full descriptions (nothing condensed to a one-liner), the two independent/proposed research items (ShinovaNet, gene-disease benchmark study), all courses (including the Artificial Intelligence Technologies 2026 Summer School, Ivan Franko National University of Lviv), and competitive programming/extracurriculars. The full resume is not length-constrained; first-author papers are listed first in each publication group. Its PDF is published on the portfolio as `assets/pdf/MD-SHIHABUL-ISLAM-SHOVO-CV.pdf` (Download CV). Section headings: "Profile" renamed to "Professional Summary"; "Courses & Professional Training" renamed to "Certifications and Professional Development" (Sept 2026, to match the RA-focused CV's naming). Header/section-rule color set to pure black (matching `AI & Medical Imaging/Md_Shihabul_Islam_Shovo_BSc_in_CSE_RA.tex`) rather than the navy/blue used in other variants.
+- `Md_Shihabul_Islam_Shovo_Full_Resume.tex` — Comprehensive, non-job-specific master resume for the portfolio site (Sept 2026). Nov 2026 update: 4 accepted and 6 under review (10 papers overall); AquaProbe accepted at MaCVi, APED-CXR/Band2Net/LAPIS under review at ISBI, and Coupled or Independent? under review at FABRIC with corrected author order and arXiv links. Not length-constrained like the application CVs: includes full education history (SSC/HSC/BSc), complete technical skills, both professional and research experience in full detail, all 10 publications with available PDF/GitHub links and result bullets, all 7 software projects with full descriptions (nothing condensed to a one-liner), the two independent/proposed research items (ShinovaNet, gene-disease benchmark study), all courses (including the Artificial Intelligence Technologies 2026 Summer School, Ivan Franko National University of Lviv), and competitive programming/extracurriculars. The full resume is not length-constrained; first-author papers are listed first in each publication group. Its PDF is published on the portfolio as `assets/pdf/MD-SHIHABUL-ISLAM-SHOVO-CV.pdf` (Download CV). Section headings: "Profile" renamed to "Professional Summary"; "Courses & Professional Training" renamed to "Certifications and Professional Development" (Sept 2026, to match the RA-focused CV's naming). Header/section-rule color set to pure black (matching `AI & Medical Imaging/Md_Shihabul_Islam_Shovo_BSc_in_CSE_RA.tex`) rather than the navy/blue used in other variants.

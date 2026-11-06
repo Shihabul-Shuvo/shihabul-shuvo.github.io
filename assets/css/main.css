@@ -251,6 +251,7 @@ html[data-theme='dark'] #theme-toggle .fa-moon { display: none; }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 8px 0 0; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 16px; text-align: center; }
 .stat .num { font-size: 1.7rem; font-weight: 700; color: var(--accent); }
+.stats-2 { grid-template-columns: repeat(2, 1fr); }
 .stats-3 { grid-template-columns: repeat(3, 1fr); }
 .num-accepted { color: var(--green) !important; }
 .num-review { color: var(--amber) !important; }

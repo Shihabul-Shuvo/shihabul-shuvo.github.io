@@ -73,10 +73,9 @@
         imaging, wearable biosignals, lightweight and explainable deep learning, parameter-efficient adaptation of
         foundation models, and the reliability of agentic vision-language systems. My name is bolded in the author
         list on each paper; AquaProbe leads the accepted list, with other first-author papers listed first in each group.</p>
-      <div class="stats stats-3">
+      <div class="stats stats-2">
         <div class="stat"><div class="num num-accepted">4</div><div class="label">Accepted</div></div>
-        <div class="stat"><div class="num num-review">6</div><div class="label">Under Review</div></div>
-        <div class="stat"><div class="num num-prep">1</div><div class="label">In Preparation</div></div>
+        <div class="stat"><div class="num num-review">5</div><div class="label">Under Review</div></div>
       </div>
     </div>
 
@@ -224,8 +223,8 @@
     </div>
 
     <div class="container section">
-      <h2>Under Review <span class="muted" style="font-weight:500; font-size:1rem;">(6 &mdash; 1 IEEE JBHI, 3 IEEE ISBI 2027, 1 IEEE/CVF
-          WACV 2027 FABRIC Workshop, 1 IEEE ICCIT 2026)</span></h2>
+      <h2>Under Review <span class="muted" style="font-weight:500; font-size:1rem;">(5 &mdash; 1 IEEE JBHI, 3 IEEE ISBI 2027, 1 IEEE/CVF
+          WACV 2027 FABRIC Workshop)</span></h2>
       <div class="card-stack">
 
         <div class="card">
@@ -304,6 +303,7 @@
           </div>
           <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Dwarikanath Mahapatra</p>
           <p class="muted"><em>IEEE International Symposium on Biomedical Imaging (ISBI) 2027</em></p>
+          <p>EEG-only ROC-AUC 0.801 on PsiConnect; +5.0 AUC points over an EEG-only student.</p>
           <div class="link-row">
             <a class="chip-link" href="https://arxiv.org/abs/2611.01548" target="_blank" rel="noopener noreferrer"><i
                 class="fas fa-file-pdf"></i> arXiv</a>
@@ -363,71 +363,9 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-head">
-            <h3><a href="https://nimishes-lab.vercel.app/papers/AWEF-Net.pdf" target="_blank">AWEF-Net: An
-                Attention-Weighted Ensemble Fusion Framework for Multi-Class Pulmonary Disease Classification from
-                Chest Radiographs</a></h3>
-            <span class="pill pill-review">Under review</span>
-          </div>
-          <p class="muted">Authors: NIMISHES Lab (incl. <strong>Md Shihabul Islam Shovo</strong>)</p>
-          <p class="muted"><em>29th IEEE Int. Conf. on Computer and Information Technology (ICCIT 2026)</em></p>
-          <p>Replaces fixed late-fusion rules with a lightweight two-layer MLP attention gate that produces
-            input-adaptive weights for ResNet50, InceptionV3, and DenseNet201, resolving the inter-model feature
-            conflict where one backbone dominates the fused decision.</p>
-          <ul>
-            <li>96.3% macro-F1 and 97.1% COVID-19 recall on the COVID-19 Radiography Database (21,165 images, 4
-              classes)</li>
-            <li>+1.4pp macro-F1 and +1.7pp COVID recall over the strongest fixed-fusion baseline</li>
-            <li>Gating adds under 0.6% of total model parameters</li>
-            <li>Better cross-dataset generalisation on an external CXR corpus</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Chest radiography</span><span class="tag">Ensemble learning</span><span
-              class="tag">Attention</span><span class="tag">Feature fusion</span><span class="tag">COVID-19</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://nimishes-lab.vercel.app/papers/AWEF-Net.pdf" target="_blank"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
-
-
       </div>
     </div>
 
-    <div class="container section">
-      <h2>In Preparation <span class="muted" style="font-weight:500; font-size:1rem;">(1)</span></h2>
-      <div class="card-stack">
-
-        <div class="card">
-          <div class="card-head">
-            <h3>CoMAF-Polyp: Calibrated Reliability-Aware Fusion of Specialist and Foundation Pseudo-Labels for
-              Semi-Supervised Polyp Segmentation</h3>
-            <span class="pill pill-prep">In preparation</span>
-          </div>
-          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Camila Gonzalez
-            (Medical University of Vienna)</p>
-          <p class="muted"><em>Planned submission: Medical Imaging with Deep Learning (MIDL) 2027</em></p>
-          <p>A calibration-aware adaptive fusion framework ("Consensus of Multi-source Adaptive Fusion") for
-            pseudo-label generation in semi-supervised polyp segmentation from colonoscopy. Fuses candidates from a
-            domain-adapted EMA specialist and a frozen SAM-Med2D foundation model, gated by a 5-descriptor
-            reliability score via a calibrated 1.4K-parameter MLP gate.</p>
-          <ul>
-            <li>88.46% Dice on Kvasir-SEG with 10% labels; fused pseudo-labels recover 98.6% of a per-image oracle
-            </li>
-            <li>+2.44pp average Dice over the best baseline across four unseen datasets under domain shift</li>
-            <li>Calibration reduces expected calibration error (ECE) from 0.147 to 0.038</li>
-            <li>All added machinery is training-time only; deployed model runs at 38.2 FPS</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Semi-supervised segmentation</span><span class="tag">Polyp segmentation</span><span
-              class="tag">Pseudo-labeling</span><span class="tag">Calibration</span><span class="tag">SAM</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
   </main>
 
   <footer class="site-footer">
@@ -439,6 +377,7 @@
           title="GitHub"><i class="fab fa-github"></i></a>
         <a class="icon-btn" href="https://www.linkedin.com/in/shihabul-islam-shovo/" target="_blank"
           rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a class="icon-btn" href="https://scholar.google.com/citations?user=qg1UAcYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
       </div>
     </div>
   </footer>
