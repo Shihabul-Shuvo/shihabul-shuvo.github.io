@@ -341,3 +341,46 @@ html[data-theme='dark'] #theme-toggle .fa-moon { display: none; }
 
 .empty-state { text-align: center; padding: 60px 20px; color: var(--text-soft); }
 .empty-state .fa-2x { color: var(--accent); margin-bottom: 14px; }
+
+/* ---------- home: compact skills ---------- */
+.skill-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; margin-bottom: 18px; }
+.skill-label { font-size: .84rem; font-weight: 600; color: var(--text-soft); margin: 0; }
+@media (max-width: 700px) { .skill-groups { grid-template-columns: 1fr; } }
+
+.card[id] { scroll-margin-top: 84px; }
+
+/* ---------- publications: figure thumbnails ---------- */
+.pub-card { display: grid; grid-template-columns: 176px minmax(0, 1fr); gap: 20px; align-items: start; }
+.pub-body { min-width: 0; }
+.pub-figure {
+  display: block; padding: 6px; background: #fff; /* diagrams are drawn for a white page, in both themes */
+  border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: zoom-in;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.pub-figure:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+.pub-figure:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pub-figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+@media (max-width: 700px) {
+  .pub-card { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+}
+
+/* ---------- publications: figure viewer ---------- */
+.figure-viewer {
+  max-width: min(1000px, calc(100vw - 32px)); max-height: calc(100vh - 32px); padding: 0;
+  border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text);
+  box-shadow: var(--shadow); overflow: auto;
+}
+.figure-viewer::backdrop { background: rgba(10, 12, 16, .62); }
+.figure-viewer-inner { position: relative; padding: 16px; }
+.figure-viewer-close { position: absolute; top: 8px; right: 8px; z-index: 1; background: var(--surface); }
+.figure-viewer figure { margin: 0; }
+.figure-viewer img {
+  display: block; max-width: 100%; height: auto; max-height: calc(100vh - 130px); margin: 28px auto 0;
+  object-fit: contain; background: #fff; border-radius: var(--radius-sm);
+}
+.figure-viewer figcaption { margin-top: 12px; font-size: .88rem; color: var(--text-soft); text-align: center; }
+
+/* ---------- side gutter on narrow screens ---------- */
+@media (max-width: 1128px) {
+  .container { padding-left: 24px; padding-right: 24px; }
+}

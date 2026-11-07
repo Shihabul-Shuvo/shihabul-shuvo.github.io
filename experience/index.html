@@ -81,20 +81,20 @@
           <h3>ELITE Research Lab LLC</h3>
           <span class="org-meta">Queens, NY, USA &middot; Remote &middot; Part-time</span>
         </div>
-        <div class="role-line">Research Assistant <span class="role-date">&mdash; Jun 2026 &ndash; Present</span></div>
+        <div class="role-line">Research Assistant <span class="role-date">&mdash; Aug 2026 &ndash; Present</span></div>
+        <div class="role-line">Research Intern <span class="role-date">&mdash; Jun 2026 &ndash; Aug 2026</span></div>
         <p class="muted" style="margin-top:10px;"><strong>Project: LCM-UNet</strong> &mdash; Lightweight Skin Lesion
           Segmentation using a Mamba-based U-Net</p>
         <ul>
-          <li>Ultra-lightweight (~34K parameters, 0.06 GFLOPs) skin lesion segmentation network built on a
-            Mamba-based state-space U-Net backbone, designed to detect melanoma-related lesion boundaries in
-            dermoscopic images for deployment on low-cost, point-of-care hardware.</li>
-          <li>Main contribution: the <strong>Residual Dilated Local Adapter (RDLA)</strong>, a zero-initialized
-            dilated convolution module that adds extra optimization capacity during training but is exactly fused
-            back into the original kernel via structural reparameterization before inference, so deployment cost
-            stays unchanged.</li>
-          <li>Validated the approach with multi-seed statistical testing on ISIC 2017, ISIC 2018, and external PH2
-            datasets, showing consistent boundary-quality improvements over the baseline (image-level Wilcoxon
-            significant at p &lt; 1e-4).</li>
+          <li>Ultra-light skin lesion segmentation network (33,474 parameters, 0.197 GMACs per 256&times;256 image) that
+            restricts bidirectional Mamba to stages at one-sixteenth of the input resolution or coarser and uses local
+            convolutions at finer scales, aimed at resource-constrained deployment.</li>
+          <li>Main contribution: a <strong>multi-basis reparameterizable adapter (MBRA)</strong> that trains dilated,
+            horizontal, and vertical depthwise kernels alongside each local branch, then folds them into the host kernel
+            via structural reparameterization before inference, adding no deployed parameters or operations.</li>
+          <li>Evaluated against eight retrained baselines over three seeds: highest Dice on the ISIC 2017 and ISIC 2018
+            test sets (88.62%, 89.73%) and second-highest on external PH2 (90.46%).</li>
+          <li>Promoted from Research Intern to Research Assistant in recognition of research contributions.</li>
         </ul>
       </div>
 
@@ -114,9 +114,9 @@
           <li>Extended the lab's work into parameter-efficient adaptation of frozen foundation models (LoRA rank
             allocation for vision transformers) and the reliability of agentic vision-language systems for medical
             imaging.</li>
-          <li>Contributions: model design, cross-validation, statistical significance testing, and Grad-CAM-based
-            explainability analysis &mdash; consistently achieving state-of-the-art parameter efficiency versus
-            standard backbones (ResNet50, DenseNet201, etc.).</li>
+          <li>Contributions across collaborative projects include model design, cross-validation, statistical
+            evaluation, Grad-CAM-based explainability analysis, and parameter-efficiency comparisons against standard
+            backbones such as ResNet50.</li>
         </ul>
       </div>
     </div>
@@ -131,10 +131,10 @@
         <div class="role-line">Web &amp; Automation Engineer <span class="role-date">&mdash; Jan 2025 &ndash;
             Present</span></div>
         <ul style="margin-top:10px;">
-          <li>Designed and developed digital solutions to support business operations, including website
-            development, lead management automation, and workflow optimization.</li>
-          <li>Responsible for maintaining web platforms, integrating business tools, and resolving technical issues
-            to improve operational efficiency.</li>
+          <li>Develop and maintain web platforms that support day-to-day business operations.</li>
+          <li>Build workflow and lead-management automation.</li>
+          <li>Integrate business tools with those platforms and workflows.</li>
+          <li>Troubleshoot and maintain production systems, resolving technical issues as they arise.</li>
         </ul>
       </div>
     </div>
@@ -151,7 +151,7 @@
           <p class="muted">VI summer school, 120 hours / 4 ECTS credits &mdash; machine learning, Python for data
             analysis, deep learning architectures, computer vision, cloud computing, and AI applications.</p>
           <div class="link-row">
-            <a class="chip-link" href="/assets/pdf/AIT-2026-0444-4-ECTS.pdf" target="_blank"><i
+            <a class="chip-link" href="/assets/pdf/AIT-2026-0444-4-ECTS.pdf" target="_blank" rel="noopener noreferrer"><i
                 class="fas fa-certificate"></i> Certificate</a>
           </div>
         </div>
@@ -165,13 +165,13 @@
         <div class="card">
           <div class="card-head">
             <h3>Full Stack Web Development with Python, Django &amp; React &mdash; Ostad</h3>
-            <span class="role-date">Oct 2025 &ndash; Completed</span>
+            <span class="role-date">Oct 2025 &ndash; Sep 2026</span>
           </div>
           <p class="muted">Covers JavaScript, Python, HTML, CSS, Django, and React across a full-stack curriculum.</p>
           <div class="link-row">
             <a class="chip-link"
               href="/assets/pdf/MD%20Shihabul%20Islam%20Shovo-Web%20Development%20with%20Python%20Django%208-C48338.pdf"
-              target="_blank"><i class="fas fa-certificate"></i> Certificate</a>
+              target="_blank" rel="noopener noreferrer"><i class="fas fa-certificate"></i> Certificate</a>
           </div>
         </div>
         <div class="card">

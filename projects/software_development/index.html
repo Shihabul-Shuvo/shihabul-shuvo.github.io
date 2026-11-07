@@ -72,7 +72,7 @@
     <div class="container section">
       <div class="card-stack">
 
-        <div class="card">
+        <div class="card" id="hospital-management">
           <div class="card-head">
             <h3>Hospital Management System</h3>
             <div class="link-row">
@@ -99,14 +99,39 @@
           </ul>
         </div>
 
-        <div class="card">
+        <div class="card" id="multi-tenant-saas">
+          <div class="card-head">
+            <h3>Multi-Tenant SaaS Project Management Platform</h3>
+            <div class="link-row">
+              <a class="icon-btn" href="https://github.com/Shihabul-Shuvo/Multi-Tenant-SaaS-Project-Management-Platform"
+                target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Django REST Framework</span><span class="tag">PostgreSQL</span><span
+              class="tag">Celery</span><span class="tag">Redis</span><span class="tag">Docker</span><span
+              class="tag">JWT</span><span class="tag">React</span>
+          </div>
+          <p>A SaaS-style project management platform where multiple organizations manage their own teams, projects,
+            tasks, and activity while keeping their data separate.</p>
+          <ul>
+            <li>Multi-tenant architecture with organization-level data isolation.</li>
+            <li>JWT authentication and role-based permissions for admins, managers, and members.</li>
+            <li>Celery and Redis for background notifications, scheduled reports, and activity processing, with Redis
+              caching for frequently requested data.</li>
+            <li>Database optimization through <code>select_related</code>/<code>prefetch_related</code>, indexing on
+              frequently queried fields, and API pagination.</li>
+            <li>OpenAPI/Swagger documentation via drf-spectacular, and a Docker Compose development setup with backend,
+              PostgreSQL, and Redis services.</li>
+          </ul>
+        </div>
+
+        <div class="card" id="exclusive-shop">
           <div class="card-head">
             <h3>Exclusive Shop (2025)</h3>
             <div class="link-row">
               <a class="icon-btn" href="https://github.com/Shihabul-Shuvo/Exclusive_Shop" target="_blank"
                 rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
-              <a class="icon-btn" href="https://eshopget.netlify.app/" target="_blank" rel="noopener noreferrer"
-                title="Live demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="tag-row">
@@ -149,7 +174,7 @@
             React frontend and DRF backend via REST APIs and CORS configuration.</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="easyhome">
           <div class="card-head">
             <h3>EasyHome (2023)</h3>
             <div class="link-row">
