@@ -68,411 +68,291 @@
 
   <main id="main">
     <div class="container page-head">
-      <h1 class="sr-only">Publications</h1>
-      <p>Research with <strong>NIMISHES Lab</strong> and <strong>ELITE Research Lab</strong> on efficient,
-        reliable deep learning for medical imaging, wearable biosignals, foundation-model adaptation, and
-        vision-language agents. Select any architecture figure to view it at full resolution.</p>
-      <div class="stats stats-2">
-        <div class="stat"><div class="num num-accepted">4</div><div class="label">Accepted</div></div>
-        <div class="stat"><div class="num num-review">5</div><div class="label">Under Review</div></div>
-      </div>
+      <h1>Publications</h1>
+      <p>Efficient, reliable deep learning for medical imaging, wearable biosignals, foundation-model adaptation, and
+        vision-language agents &mdash; with <strong>NIMISHES Lab</strong> and <strong>ELITE Research Lab</strong>.</p>
     </div>
 
-    <div class="container section">
-      <h2>Accepted <span class="muted" style="font-weight:500; font-size:1rem;">(4 &mdash; peer-reviewed, IEEE
-          conferences and IEEE/CVF workshops)</span></h2>
-      <div class="card-stack">
+    <section class="container venues-wrap" aria-labelledby="venues-heading">
+      <h2 id="venues-heading" class="eyebrow">Published &amp; submitted at</h2>
+      <ul class="venue-grid">
+          <li><button type="button" class="venue" data-filter="venue:wacv" aria-pressed="false">
+            <span class="venue-kind">Conference workshops &middot; MaCVi &middot; FABRIC</span>
+            <span class="venue-name">IEEE/CVF WACV 2027</span>
+            <span class="venue-counts"><span class="vc vc-accepted">1 accepted</span><span class="vc vc-review">1 under review</span></span>
+          </button></li>
+          <li><button type="button" class="venue" data-filter="venue:jbhi" aria-pressed="false">
+            <span class="venue-kind">Journal &middot; Q1 &middot; IF 7.7</span>
+            <span class="venue-name">IEEE JBHI</span>
+            <span class="venue-counts"><span class="vc vc-review">1 under review</span></span>
+          </button></li>
+          <li><button type="button" class="venue" data-filter="venue:isbi" aria-pressed="false">
+            <span class="venue-kind">Conference &middot; Biomedical imaging</span>
+            <span class="venue-name">IEEE ISBI 2027</span>
+            <span class="venue-counts"><span class="vc vc-review">3 under review</span></span>
+          </button></li>
+          <li><button type="button" class="venue" data-filter="venue:becithcon" aria-pressed="false">
+            <span class="venue-kind">Conference &middot; Biomedical engineering</span>
+            <span class="venue-name">IEEE BECITHCON 2026</span>
+            <span class="venue-counts"><span class="vc vc-accepted">2 accepted</span></span>
+          </button></li>
+          <li><button type="button" class="venue" data-filter="venue:iconeect" aria-pressed="false">
+            <span class="venue-kind">Conference &middot; Computer systems</span>
+            <span class="venue-name">IEEE iCONEECT 2026</span>
+            <span class="venue-counts"><span class="vc vc-accepted">1 accepted</span></span>
+          </button></li>
+      </ul>
+    </section>
 
-        <div class="card pub-card">
+    <div class="container pub-toolbar" role="toolbar" aria-label="Filter publications">
+      <div class="filter-chips">
+        <button type="button" class="filter" data-filter="all" aria-pressed="true">All <span>9</span></button>
+        <button type="button" class="filter" data-filter="status:accepted" aria-pressed="false">Accepted <span>4</span></button>
+        <button type="button" class="filter" data-filter="status:review" aria-pressed="false">Under review <span>5</span></button>
+        <button type="button" class="filter" data-filter="first" aria-pressed="false">First author <span>4</span></button>
+      </div>
+      <p class="filter-status" aria-live="polite"></p>
+    </div>
+
+    <section class="container pub-group" data-group="accepted" aria-labelledby="h-accepted">
+      <h2 id="h-accepted">Accepted <span class="count">4</span></h2>
+      <div class="pub-list">
+        <article class="pub-card" id="aquaprobe" data-status="accepted" data-venue="wacv" data-first="true">
           <a class="pub-figure" href="/assets/img/publications/full/aquaprobe-architecture.webp"
-            aria-label="Enlarge figure for AquaProbe" aria-haspopup="dialog"
-            data-figure-caption="AquaProbe: physically controlled rendering and the degradation-conditioned probe.">
+            aria-label="View architecture figure for AquaProbe" aria-haspopup="dialog"
+            data-figure-title="AquaProbe" data-figure-caption="Physically controlled underwater rendering and the degradation-conditioned probe.">
             <img src="/assets/img/publications/thumbnails/aquaprobe-architecture.webp" width="960" height="621"
-              alt="AquaProbe overview: physically controlled underwater rendering of a clean scene across water types and ranges, followed by a degradation-conditioned probe that compares frozen encoder features with linear CKA to produce a per-block gap profile for each condition." loading="lazy" decoding="async" />
+              alt="AquaProbe overview: clean scenes rendered across water types and ranges, and a probe comparing frozen encoder features block by block." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
+            <div class="pub-badges"><span class="pill pill-accepted">Accepted</span><span class="pill pill-first">First author</span></div>
             <h3><a href="https://arxiv.org/abs/2610.40900" target="_blank" rel="noopener noreferrer">AquaProbe: Efficient Adaptation of Frozen Vision Models for Underwater Images</a></h3>
-            <span class="pill pill-accepted">Accepted</span>
+            <p class="pub-authors"><strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta Paul, Trung Dong, Xiaomin Lin</p>
+            <p class="pub-venue">MaCVi Workshop, IEEE/CVF WACV 2027</p>
+            <p class="pub-summary">Measures where the underwater domain gap grows inside a frozen vision encoder, then splits a fixed LoRA rank budget across blocks to match it.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2610.40900" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-aquaprobe">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-aquaprobe">
+                <li>70.1 mIoU on SUIM (DINOv2 ViT-B/14): +1.9 over uniform allocation at the same 0.59M-parameter budget</li>
+                <li>Uniform allocation needs 4&times; the adapter parameters to match it</li>
+                <li>+1.5 mIoU with SAM ViT-B on SUIM and +1.5 mIoU on TrashCan at equal budget</li>
+            </ul>
           </div>
-          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
-            Paul, Trung Dong, Xiaomin Lin (NIMISHES Lab &middot; University of South Florida)</p>
-          <p class="muted"><em>5th Workshop on Maritime Computer Vision (MaCVi), IEEE/CVF Winter Conference on
-              Applications of Computer Vision (WACV 2027)</em></p>
-          <p>A degradation-conditioned probe that measures where the underwater domain gap grows inside a frozen
-            vision encoder, then splits a fixed LoRA rank budget across blocks in proportion to that measured
-            profile. Clean RGB-D scenes are physically re-rendered across 10 Jerlov water types and 4 imaging ranges,
-            and per-block CKA divergence (rather than the usual cumulative curve) shows where new divergence is
-            introduced.</p>
-          <ul>
-            <li>70.1 mIoU on SUIM with profile-proportional LoRA allocation (DINOv2 ViT-B/14) &mdash; +1.9 mIoU over
-              uniform allocation at the same 0.59M adapter-parameter budget</li>
-            <li>Uniform allocation needs 4x the adapter parameters to match it</li>
-            <li>Also +1.5 mIoU on SUIM with SAM ViT-B and +1.5 mIoU on TrashCan at equal budget</li>
-            <li>Condition-routed variant: 70.6 mIoU on SUIM and 63.4 AUDRC under a held-out degradation range</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Underwater vision</span><span class="tag">LoRA</span><span
-              class="tag">Parameter-efficient fine-tuning</span><span class="tag">Vision transformers</span><span
-              class="tag">Domain shift</span><span class="tag">Segmentation</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2610.40900" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2610.40900" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="card pub-card">
+        </article>
+        <article class="pub-card" id="wavefog" data-status="accepted" data-venue="becithcon" data-first="true">
           <a class="pub-figure" href="/assets/img/publications/full/wavefog-architecture.webp"
-            aria-label="Enlarge figure for WaveFoG" aria-haspopup="dialog"
-            data-figure-caption="WaveFoG: dual-branch CNN-Transformer with a discrete-wavelet gate.">
+            aria-label="View architecture figure for WaveFoG" aria-haspopup="dialog"
+            data-figure-title="WaveFoG" data-figure-caption="Dual-branch CNN-Transformer with a discrete-wavelet gate.">
             <img src="/assets/img/publications/thumbnails/wavefog-architecture.webp" width="960" height="257"
-              alt="WaveFoG architecture: an input window feeds 1D CNN, Transformer, and DWT branches; CNN and Transformer features are concatenated and combined with wavelet features through a sigmoid wavelet gate, then an MLP classifies FoG versus non-FoG." loading="lazy" decoding="async" />
+              alt="WaveFoG architecture: CNN, Transformer, and wavelet branches fused through a sigmoid wavelet gate before an MLP classifier." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
-            <h3><a href="https://arxiv.org/abs/2609.22147" target="_blank" rel="noopener noreferrer">WaveFoG: Wavelet-Gated
-                Transformer for Parkinson's Freezing of Gait Detection Using Wearable Accelerometer Signals</a></h3>
-            <span class="pill pill-accepted">Accepted</span>
+            <div class="pub-badges"><span class="pill pill-accepted">Accepted</span><span class="pill pill-first">First author</span></div>
+            <h3><a href="https://arxiv.org/abs/2609.22147" target="_blank" rel="noopener noreferrer">WaveFoG: Wavelet-Gated Transformer for Parkinson's Freezing of Gait Detection Using Wearable Accelerometer Signals</a></h3>
+            <p class="pub-authors"><strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta Paul, Adrita Rahman, Israt Jerin Esha</p>
+            <p class="pub-venue">IEEE BECITHCON 2026, Dhaka</p>
+            <p class="pub-summary">A CNN-Transformer with a wavelet gate that detects Parkinson's freezing-of-gait episodes from wrist-worn accelerometers under severe class imbalance.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2609.22147" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <a class="chip-link chip-ghost" href="https://github.com/Shihabul-Shuvo/WaveFoG" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-wavefog">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-wavefog">
+                <li>F1 0.875 &plusmn; 0.017 and AUPRC 0.833 &plusmn; 0.020 on the TLVMC FoG dataset</li>
+                <li>Subject-independent grouped ten-fold cross-validation</li>
+                <li>Up to +5.4pp F1 over 1D CNN, Bi-LSTM, and Transformer baselines</li>
+            </ul>
           </div>
-          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
-            Paul, Adrita Rahman, Israt Jerin Esha</p>
-          <p class="muted"><em>5th IEEE Int. Conf. on Biomedical Engineering, Computer and Information Technology for
-              Health (BECITHCON 2026)</em>, Dhaka, Bangladesh, 4&ndash;5 September 2026</p>
-          <p>A dual-branch CNN-Transformer that fuses discrete wavelet sub-band descriptors through a sigmoid gating
-            layer to detect freezing-of-gait episodes from wrist-worn accelerometers under severe class imbalance.
-          </p>
-          <ul>
-            <li>F1 0.875 &plusmn; 0.017 and AUPRC 0.833 &plusmn; 0.020 on the Kaggle TLVMC FoG dataset</li>
-            <li>Subject-independent grouped ten-fold cross-validation</li>
-            <li>Up to +5.4pp F1 over 1D CNN, Bi-LSTM, and vanilla Transformer baselines</li>
-            <li>Temporal saliency maps align with reported FoG onset characteristics</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Freezing of gait</span><span class="tag">Parkinson's disease</span><span
-              class="tag">Wearable IMU</span><span class="tag">Wavelet transform</span><span class="tag">Focal
-              loss</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2609.22147" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2609.22147" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-            <a class="chip-link" href="https://github.com/Shihabul-Shuvo/WaveFoG" target="_blank" rel="noopener noreferrer"><i
-                class="fab fa-github"></i> Source</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="card pub-card">
+        </article>
+        <article class="pub-card" id="sleepeffformer" data-status="accepted" data-venue="becithcon" data-first="false">
           <a class="pub-figure" href="/assets/img/publications/full/sleepeffformer-architecture.webp"
-            aria-label="Enlarge figure for SleepEffFormer" aria-haspopup="dialog"
-            data-figure-caption="SleepEffFormer: end-to-end pipeline, CNN tokeniser, and encoder block.">
+            aria-label="View architecture figure for SleepEffFormer" aria-haspopup="dialog"
+            data-figure-title="SleepEffFormer" data-figure-caption="End-to-end pipeline, CNN tokeniser, and encoder block.">
             <img src="/assets/img/publications/thumbnails/sleepeffformer-architecture.webp" width="960" height="302"
-              alt="SleepEffFormer pipeline: an EEG epoch is preprocessed, tokenised by a 1D CNN, encoded by two pre-LN Transformer blocks, classified by a linear head, and smoothed by the parameter-free TAS layer into a hypnogram. Insets detail the CNN tokeniser and encoder block." loading="lazy" decoding="async" />
+              alt="SleepEffFormer pipeline: EEG epoch, CNN tokeniser, two Transformer encoder blocks, classifier, and transition-aware smoothing into a hypnogram." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
-            <h3><a href="https://arxiv.org/abs/2609.22148" target="_blank" rel="noopener noreferrer">SleepEffFormer:
-                Efficient CNN-Transformer with Transition-Aware Smoothing for Single-Channel EEG Sleep Stage
-                Classification</a></h3>
-            <span class="pill pill-accepted">Accepted</span>
+            <div class="pub-badges"><span class="pill pill-accepted">Accepted</span></div>
+            <h3><a href="https://arxiv.org/abs/2609.22148" target="_blank" rel="noopener noreferrer">SleepEffFormer: Efficient CNN-Transformer with Transition-Aware Smoothing for Single-Channel EEG Sleep Stage Classification</a></h3>
+            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Israt Jerin Esha, Adrita Rahman</p>
+            <p class="pub-venue">IEEE BECITHCON 2026, Dhaka</p>
+            <p class="pub-summary">A ~367K-parameter CNN-Transformer for single-channel EEG sleep staging, with a parameter-free layer that removes implausible stage transitions.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2609.22148" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <a class="chip-link chip-ghost" href="https://github.com/Nishi-Kanta-Paul/SleepStage" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-sleepeffformer">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-sleepeffformer">
+                <li>83.9% accuracy, 78.9% macro-F1, &kappa; 0.765 on Sleep-EDF Expanded (subject-wise split)</li>
+                <li>Matches AttnSleep with 3&ndash;5&times; fewer parameters</li>
+                <li>Transition-aware smoothing adds +1.8pp macro-F1 with zero trainable parameters</li>
+            </ul>
           </div>
-          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Israt Jerin Esha,
-            Adrita Rahman</p>
-          <p class="muted"><em>5th IEEE BECITHCON 2026</em>, Dhaka, Bangladesh, 4&ndash;5 September 2026</p>
-          <p>A lightweight CNN-Transformer for automated sleep staging from a single EEG channel, paired with a
-            non-parametric Transition-Aware Smoothing (TAS) layer that suppresses physiologically implausible stage
-            transitions.</p>
-          <ul>
-            <li>83.9% accuracy, 78.9% macro-F1, Cohen's kappa 0.765 on Sleep-EDF Expanded (78 all-night recordings,
-              subject-wise split)</li>
-            <li>Matches AttnSleep with 3&ndash;5x fewer parameters (~367K)</li>
-            <li>Transformer encoder adds +6.6pp macro-F1; TAS adds +1.8pp with zero trainable parameters</li>
-            <li>Attention maps recover physiologically meaningful sleep-stage EEG signatures</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Sleep staging</span><span class="tag">Single-channel EEG</span><span
-              class="tag">Transformer</span><span class="tag">1D CNN</span><span
-              class="tag">Explainability</span><span class="tag">Lightweight DL</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2609.22148" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2609.22148" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-            <a class="chip-link" href="https://github.com/Nishi-Kanta-Paul/SleepStage" target="_blank" rel="noopener noreferrer"><i
-                class="fab fa-github"></i> Source</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="card pub-card">
+        </article>
+        <article class="pub-card" id="dr-litenet" data-status="accepted" data-venue="iconeect" data-first="false">
           <a class="pub-figure" href="/assets/img/publications/full/dr-litenet-architecture.webp"
-            aria-label="Enlarge figure for DR-LiteNet" aria-haspopup="dialog"
-            data-figure-caption="DR-LiteNet: hybrid CNN and handcrafted-feature fusion with training-only ADASYN.">
+            aria-label="View architecture figure for DR-LiteNet" aria-haspopup="dialog"
+            data-figure-title="DR-LiteNet" data-figure-caption="Hybrid CNN and handcrafted-feature fusion with training-only ADASYN.">
             <img src="/assets/img/publications/thumbnails/dr-litenet-architecture.webp" width="960" height="409"
-              alt="DR-LiteNet architecture: a preprocessed fundus image feeds an EfficientNetB0 branch and a handcrafted-feature branch; their fused 1,331-dimensional vector, with training-only feature-level ADASYN oversampling, passes to a classification head that outputs five DR grades, with Grad-CAM for explanation." loading="lazy" decoding="async" />
+              alt="DR-LiteNet architecture: EfficientNetB0 and handcrafted-feature branches fused into a five-grade classifier with Grad-CAM explanations." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
-            <h3><a href="https://arxiv.org/abs/2611.04405" target="_blank" rel="noopener noreferrer">DR-LiteNet: A
-                Lightweight Explainable Hybrid CNN Framework for Imbalanced Diabetic Retinopathy Grading via Adaptive
-                SMOTE Fusion</a></h3>
-            <span class="pill pill-accepted">Accepted</span>
+            <div class="pub-badges"><span class="pill pill-accepted">Accepted</span></div>
+            <h3><a href="https://arxiv.org/abs/2611.04405" target="_blank" rel="noopener noreferrer">DR-LiteNet: A Lightweight Explainable Hybrid CNN Framework for Imbalanced Diabetic Retinopathy Grading via Adaptive SMOTE Fusion</a></h3>
+            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Audrija Chowdhury, Israt Jahan Esha</p>
+            <p class="pub-venue">IEEE iCONEECT 2026</p>
+            <p class="pub-summary">Fuses EfficientNetB0 features with handcrafted lesion descriptors and rebalances classes in feature space for five-grade retinopathy grading.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2611.04405" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <a class="chip-link chip-ghost" href="https://github.com/Nishi-Kanta-Paul/DR-LiteNet" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-dr-litenet">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-dr-litenet">
+                <li>88.77% accuracy, QWK 0.884, macro-F1 0.792 on APTOS 2019</li>
+                <li>4.69M parameters; beats ResNet50 (23.5M) by &Delta;QWK 0.022</li>
+                <li>Grad-CAM saliency for post-hoc explainability</li>
+            </ul>
           </div>
-          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Audrija Chowdhury, Israt Jahan Esha</p>
-          <p class="muted"><em>1st IEEE Int. Conf. on Next-Generation Electrical &amp; Electronics, Computer Systems, and
-              Technologies (iCONEECT 2026)</em></p>
-          <p>A dual-branch network that fuses 1,280-d EfficientNetB0 features with a 51-d handcrafted lesion
-            descriptor (vessel density, exudate intensity, texture entropy, HSV histograms), then applies ADASYN in
-            feature space to correct five-grade class imbalance without touching the images.</p>
-          <ul>
-            <li>88.77% &plusmn; 0.61 accuracy, QWK 0.884 &plusmn; 0.010, macro-F1 0.792 &plusmn; 0.008 on APTOS 2019
-            </li>
-            <li>Only 4.69M parameters &mdash; beats ResNet50 (23.5M) by &Delta;QWK = 0.022</li>
-            <li>Two-phase training: balanced head warm-up, then end-to-end fine-tuning</li>
-            <li>Grad-CAM saliency maps for post-hoc clinical explainability</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Diabetic retinopathy</span><span class="tag">Class imbalance</span><span
-              class="tag">ADASYN</span><span class="tag">EfficientNet</span><span class="tag">Grad-CAM</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2611.04405" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2611.04405" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-            <a class="chip-link" href="https://github.com/Nishi-Kanta-Paul/DR-LiteNet" target="_blank"
-              rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
-          </div>
-        </div>
-        </div>
-
+        </article>
       </div>
-    </div>
+    </section>
 
-    <div class="container section">
-      <h2>Under Review <span class="muted" style="font-weight:500; font-size:1rem;">(5 &mdash; 1 IEEE JBHI, 3 IEEE ISBI 2027, 1 IEEE/CVF
-          WACV 2027 FABRIC Workshop)</span></h2>
-      <div class="card-stack">
-
-        <div class="card pub-card">
+    <section class="container pub-group" data-group="review" aria-labelledby="h-review">
+      <h2 id="h-review">Under Review <span class="count">5</span></h2>
+      <div class="pub-list">
+        <article class="pub-card" id="lcm-unet" data-status="review" data-venue="jbhi" data-first="true">
           <a class="pub-figure" href="/assets/img/publications/full/lcm-unet-architecture.webp"
-            aria-label="Enlarge figure for LCM-UNet" aria-haspopup="dialog"
-            data-figure-caption="LCM-UNet: overall architecture. Bidirectional Mamba runs only in the shaded coarse-scale stages; MBRA branches are training-only and folded away before deployment.">
+            aria-label="View architecture figure for LCM-UNet" aria-haspopup="dialog"
+            data-figure-title="LCM-UNet" data-figure-caption="Overall architecture. Mamba runs only in the shaded coarse-scale stages; MBRA branches are folded away before deployment.">
             <img src="/assets/img/publications/thumbnails/lcm-unet-architecture.webp" width="960" height="370"
-              alt="LCM-UNet architecture: a U-shaped encoder-decoder from a dermoscopic image to a lesion mask. Convolutional stages at fine scales, local-only LMBP blocks at intermediate scales, and GLMBP blocks with bidirectional Mamba only at one-sixteenth resolution or coarser, joined by learnable per-stage skip gains." loading="lazy" decoding="async" />
+              alt="LCM-UNet architecture: a U-shaped encoder-decoder with bidirectional Mamba only at the coarsest stages." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
+            <div class="pub-badges"><span class="pill pill-review">Under review</span><span class="pill pill-first">First author</span></div>
             <h3><a href="https://arxiv.org/abs/2611.04409" target="_blank" rel="noopener noreferrer">LCM-UNet: Scale-Selective Mamba with Reparameterizable Multi-Basis Local Modeling for Lightweight Skin Lesion Segmentation</a></h3>
-            <span class="pill pill-review">Under review</span>
+            <p class="pub-authors"><strong>Md Shihabul Islam Shovo</strong>*, Nishi Kanta Paul*, Dip Kumar Saha, Kishor Morol <span class="pub-note">(*Equal contribution)</span></p>
+            <p class="pub-venue">IEEE Journal of Biomedical and Health Informatics</p>
+            <p class="pub-summary">A 33K-parameter skin lesion segmentation network that uses Mamba only at coarse scales, plus a training-only adapter that folds away before deployment.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2611.04409" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-lcm-unet">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-lcm-unet">
+                <li>Best Dice of nine retrained networks: 88.62% on ISIC 2017 and 89.73% on ISIC 2018</li>
+                <li>33,474 deployed parameters and 0.197 GMACs per 256&times;256 image</li>
+                <li>External PH2 validation: 90.46% Dice</li>
+            </ul>
           </div>
-          <p class="muted"><em>First author (equal contribution with Nishi Kanta Paul).</em> Authors: <strong>Md Shihabul Islam Shovo</strong>,
-            Nishi Kanta Paul, Dip Kumar Saha, Kishor Morol</p>
-          <p class="muted"><em>IEEE Journal of Biomedical and Health Informatics (JBHI)</em> &mdash; Q1, IF 7.7</p>
-          <p>Allocates global and local modeling by spatial scale: bidirectional Mamba runs only at stages at
-            one-sixteenth of the input resolution or coarser, while a multi-basis reparameterizable adapter (MBRA) trains
-            dilated, horizontal, and vertical depthwise kernels alongside each local branch and folds them into the host
-            kernel before inference.</p>
-          <ul>
-            <li>33,474 deployed parameters and 0.197 GMACs per 256&times;256 image</li>
-            <li>Highest Dice among nine networks retrained under a harmonized protocol: 88.62% &plusmn; 0.21 on ISIC 2017
-              and 89.73% &plusmn; 0.18 on ISIC 2018 (three seeds)</li>
-            <li>External validation on PH2: 90.46% &plusmn; 0.31 Dice, second among the compared models</li>
-            <li>The adapter improves Dice by 0.48pp over a single host kernel with no added deployed parameters or
-              operations; its reparameterization is exact up to floating-point rounding</li>
-            <li>Removing Mamba from the one-eighth-resolution decoder stage eliminates 63% of Mamba operations with a Dice
-              change of &minus;0.03pp</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Skin lesion segmentation</span><span class="tag">State-space model</span><span
-              class="tag">Mamba</span><span class="tag">Reparameterization</span><span class="tag">U-Net</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2611.04409" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2611.04409" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="card pub-card">
+        </article>
+        <article class="pub-card" id="aped-cxr" data-status="review" data-venue="isbi" data-first="true">
           <a class="pub-figure" href="/assets/img/publications/full/aped-cxr-architecture.webp"
-            aria-label="Enlarge figure for APED-CXR" aria-haspopup="dialog"
-            data-figure-caption="APED-CXR: compact student, image-only prediction, and training-only privileged verification.">
+            aria-label="View architecture figure for APED-CXR" aria-haspopup="dialog"
+            data-figure-title="APED-CXR" data-figure-caption="Compact image-only student with training-only privileged verification.">
             <img src="/assets/img/publications/thumbnails/aped-cxr-architecture.webp" width="960" height="448"
-              alt="APED-CXR framework: a compact image-only student produces evidence maps, class scores, and boxes, while during training a frozen multimodal teacher verifies region proposals using the image, report, and queried class to supervise the student." loading="lazy" decoding="async" />
+              alt="APED-CXR framework: an image-only student supervised during training by a frozen multimodal teacher that verifies region proposals." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
-            <h3><a href="https://arxiv.org/abs/2610.29740" target="_blank" rel="noopener noreferrer">APED-CXR: Adaptive
-                Privileged Evidence Distillation for Chest X-Ray Grounding with Image-Only Inference</a></h3>
-            <span class="pill pill-review">Under review</span>
+            <div class="pub-badges"><span class="pill pill-review">Under review</span><span class="pill pill-first">First author</span></div>
+            <h3><a href="https://arxiv.org/abs/2610.29740" target="_blank" rel="noopener noreferrer">APED-CXR: Adaptive Privileged Evidence Distillation for Chest X-Ray Grounding with Image-Only Inference</a></h3>
+            <p class="pub-authors"><strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta Paul, Jamil Fayyad</p>
+            <p class="pub-venue">IEEE ISBI 2027</p>
+            <p class="pub-summary">A compact image-only student learns report-informed disease localisation from a frozen multimodal teacher that is used only during training.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2610.29740" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-aped-cxr">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-aped-cxr">
+                <li>PadChest-GR micro-gF1 0.338 vs. 0.302 with fixed proposals (paired gain 0.036, 95% CI [0.022, 0.049])</li>
+                <li>Diagnostic macro-AUC 0.815</li>
+                <li>11.1M parameters, 9.6 ms per image on an A100</li>
+            </ul>
           </div>
-          <p class="muted"><em>First author.</em> Authors: <strong>Md Shihabul Islam Shovo</strong>, Nishi Kanta
-            Paul, Jamil Fayyad (NIMISHES Lab &middot; American University of Sharjah)</p>
-          <p class="muted"><em>IEEE International Symposium on Biomedical Imaging (ISBI) 2027</em> &mdash; submitted;
-            preprint arXiv:2610.29740, 21 October 2026</p>
-          <p>An 11.1M-parameter student learns report-informed spatial evidence from a frozen multimodal teacher.
-            During training, the teacher verifies regions proposed from the student's current evidence maps using
-            the image, report, and queried class. The student predicts disease labels and bounding boxes using only
-            the image at inference.</p>
-          <ul>
-            <li>PadChest-GR box-level micro-gF1: 0.338 &plusmn; 0.018 versus 0.302 &plusmn; 0.005 with fixed warm-up
-              proposals (IoU &ge; 0.5); paired gain 0.036, 95% CI [0.022, 0.049], across five seeds</li>
-            <li>Diagnostic macro-AUC 0.815; NIH ChestX-ray14 secondary box-recall check: 0.447 versus 0.423</li>
-            <li>11.1M parameters, 5.7 GMACs, and 9.6 ms per image on an A100 (batch size 1), including box extraction</li>
-            <li>Teacher and reports are training-only; adaptive supervision costs 34.4 teacher GPU-hours per seed
-              versus 5.9 for fixed proposals. NIH is not independent external validation because it was used to
-              train the teacher.</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Chest X-ray</span><span class="tag">Knowledge distillation</span><span
-              class="tag">Privileged information</span><span class="tag">Visual grounding</span><span
-              class="tag">Image-only inference</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2610.29740" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2610.29740" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="card pub-card">
+        </article>
+        <article class="pub-card" id="band2net" data-status="review" data-venue="isbi" data-first="false">
           <a class="pub-figure" href="/assets/img/publications/full/band2net-architecture.webp"
-            aria-label="Enlarge figure for Band2Net" aria-haspopup="dialog"
-            data-figure-caption="Band2Net: fMRI teacher, EEG student, and frequency-to-network transport.">
+            aria-label="View architecture figure for Band2Net" aria-haspopup="dialog"
+            data-figure-title="Band2Net" data-figure-caption="Training-only fMRI teacher, EEG student, and frequency-to-network transport.">
             <img src="/assets/img/publications/thumbnails/band2net-architecture.webp" width="960" height="464"
-              alt="Band2Net framework: a training-only fMRI teacher encodes brain networks, an EEG student encodes frequency bands, and an optimal-transport module aligns band features to network features. Only the EEG student is used at inference." loading="lazy" decoding="async" />
+              alt="Band2Net framework: a training-only fMRI teacher, an EEG student, and an optimal-transport module aligning frequency bands to brain networks." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
+            <div class="pub-badges"><span class="pill pill-review">Under review</span></div>
             <h3><a href="https://arxiv.org/abs/2611.01548" target="_blank" rel="noopener noreferrer">Band2Net: Frequency-to-Network Transport Distillation for fMRI-Privileged, EEG-Only Session-Condition Decoding</a></h3>
-            <span class="pill pill-review">Under review</span>
+            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Dwarikanath Mahapatra</p>
+            <p class="pub-venue">IEEE ISBI 2027</p>
+            <p class="pub-summary">Uses fMRI as training-only privileged information, transporting EEG frequency bands onto fMRI brain networks so inference needs EEG alone.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2611.01548" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-band2net">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-band2net">
+                <li>0.801 ROC-AUC for EEG-only decoding on the PsiConnect psilocybin dataset</li>
+                <li>+5.0 AUC points (95% CI 1.8&ndash;8.2) over an EEG-only student</li>
+                <li>Subject-grouped cross-validation</li>
+            </ul>
           </div>
-          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Dwarikanath Mahapatra</p>
-          <p class="muted"><em>IEEE International Symposium on Biomedical Imaging (ISBI) 2027</em></p>
-          <p>Treats fMRI as privileged information available only during training. EEG is encoded into five
-            frequency-specific connectivity graphs and fMRI into seven canonical network tokens from a frozen teacher;
-            a balanced entropic transport problem between the two token sets gives each EEG band its own fMRI target.</p>
-          <ul>
-            <li>0.801 ROC-AUC for EEG-only session-condition decoding on the PsiConnect psilocybin dataset, under
-              subject-grouped cross-validation</li>
-            <li>5.0 AUC points (95% CI 1.8&ndash;8.2) above an EEG-only student</li>
-            <li>EEG and fMRI come from the same participants under matched conditions, not simultaneously; inference
-              uses EEG only</li>
-            <li>Margins over a single shared plan, a KL-relaxed plan, and label-free network descriptors remain
-              unresolved</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">EEG&ndash;fMRI</span><span class="tag">Privileged learning</span><span
-              class="tag">Optimal transport</span><span class="tag">Knowledge distillation</span><span
-              class="tag">Brain connectivity</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2611.01548" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2611.01548" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="card pub-card">
+        </article>
+        <article class="pub-card" id="lapis" data-status="review" data-venue="isbi" data-first="false">
           <a class="pub-figure" href="/assets/img/publications/full/lapis-architecture.webp"
-            aria-label="Enlarge figure for LAPIS" aria-haspopup="dialog"
-            data-figure-caption="LAPIS: latent decomposition, identity residual learning, and replacement-aware training.">
+            aria-label="View architecture figure for LAPIS" aria-haspopup="dialog"
+            data-figure-title="LAPIS" data-figure-caption="Latent decomposition, identity residual learning, and replacement-aware training.">
             <img src="/assets/img/publications/thumbnails/lapis-architecture.webp" width="960" height="395"
-              alt="LAPIS framework: chest radiograph latents are decomposed by an orthonormal basis into clinical and identity parts, identity residuals are learned and mixed from random donors, and replacement-aware training decodes the anonymized image under identity, clinical, and realism losses." loading="lazy" decoding="async" />
+              alt="LAPIS framework: latents split into clinical and identity parts, identity residuals mixed from donors, and replacement-aware decoding." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
+            <div class="pub-badges"><span class="pill pill-review">Under review</span></div>
             <h3><a href="https://arxiv.org/abs/2610.40722" target="_blank" rel="noopener noreferrer">LAPIS: Clinically Constrained Patient-Identity Residual Learning for Chest X-Ray Anonymization</a></h3>
-            <span class="pill pill-review">Under review</span>
+            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, D&eacute;sir&eacute; Sidib&eacute;</p>
+            <p class="pub-venue">IEEE ISBI 2027</p>
+            <p class="pub-summary">Concentrates patient identity in a compact, replaceable latent residual so chest X-rays can be anonymised while keeping clinical content.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2610.40722" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-lapis">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-lapis">
+                <li>Worst-case cross-study linkability reduced from 0.961 to 0.791 AUC</li>
+                <li>Macro AUROC cost of only 0.012 relative to reconstruction</li>
+                <li>Evaluated on patient-disjoint ChestX-ray14 sets with adapted attackers</li>
+            </ul>
           </div>
-          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Désiré Sidibé</p>
-          <p class="muted"><em>IEEE International Symposium on Biomedical Imaging (ISBI) 2027</em></p>
-          <p>Adapts a spatial chest-radiograph latent space so that patient-discriminative information concentrates in
-            a compact, replaceable channel residual while most clinically relevant content stays in the complement. At
-            release, the residual is replaced by a mixture of donor residuals.</p>
-          <ul>
-            <li>Reduces worst-case cross-study linkability from 0.961 to 0.791 AUC at a macro AUROC cost of 0.012 relative
-              to reconstruction</li>
-            <li>The residual is defined by an exactly semi-orthogonal basis, and a spatial adversary suppresses identity
-              leakage from the complement</li>
-            <li>Replacement-aware training teaches the decoder cross-patient residual swaps under output identity,
-              clinical, and realism constraints</li>
-            <li>Evaluated on patient-disjoint ChestX-ray14 sets with adapted attackers and a structural source-retrieval
-              attack; a deformation-based baseline remains better at structural source retrieval</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Anonymization</span><span class="tag">Patient re-identification</span><span
-              class="tag">Chest radiography</span><span class="tag">Representation learning</span><span
-              class="tag">Privacy-utility trade-off</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2610.40722" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2610.40722" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="card pub-card">
+        </article>
+        <article class="pub-card" id="coupled" data-status="review" data-venue="wacv" data-first="false">
           <a class="pub-figure" href="/assets/img/publications/full/coupled-independent-framework.webp"
-            aria-label="Enlarge figure for Coupled or Independent?" aria-haspopup="dialog"
-            data-figure-caption="Coupled or Independent?: tool and reasoning channels, with detectable and undetectable failure paths.">
+            aria-label="View architecture figure for Coupled or Independent?" aria-haspopup="dialog"
+            data-figure-title="Coupled or Independent?" data-figure-caption="Tool and reasoning channels, with detectable and undetectable failure paths.">
             <img src="/assets/img/publications/thumbnails/coupled-independent-framework.webp" width="960" height="537"
-              alt="Experimental pipeline: a perturbed skin lesion image passes through full-image or crop-first retrieval tool channels and a vision-language agent reasoning channel. A disagreement check fires in the full-image case and stays silent in the crop-first case, where both channels are jointly wrong." loading="lazy" decoding="async" />
+              alt="Pipeline: a perturbed skin lesion image passes through retrieval tools and a VLM reasoner; a disagreement check fires in one case and stays silent in the other." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
           </a>
           <div class="pub-body">
-          <div class="card-head">
+            <div class="pub-badges"><span class="pill pill-review">Under review</span></div>
             <h3><a href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer">Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems</a></h3>
-            <span class="pill pill-review">Under review</span>
+            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Md Mostafijur Rahman, Jamil Fayyad</p>
+            <p class="pub-venue">FABRIC Workshop, IEEE/CVF WACV 2027</p>
+            <p class="pub-summary">Shows that when a medical VLM agent's tools and reasoner share one visual fault, a hard-label consistency check cannot catch their joint failures.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-coupled">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-coupled">
+                <li>Crop-first retrieval gives 55% joint wrong agreement vs. 35% for full-image retrieval</li>
+                <li>Disagreement recall limited to 0.29 (crop-first) vs. 0.57 (full-image)</li>
+                <li>Effect reproduced on an independent external test set</li>
+            </ul>
           </div>
-          <p class="muted">Authors: Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Md Mostafijur Rahman,
-            Jamil Fayyad</p>
-          <p class="muted"><em>Workshop on Foundation AI for Biomedical Reasoning, Imaging, and Cognition (FABRIC),
-              IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)</em></p>
-          <p>Tests whether tool-using vision-language agents are actually safer than single-shot models when the tool
-            channel (segmentation and contrastive retrieval) and the reasoning channel (an iterative VLM reasoner)
-            share one visual fault. Introduces a coupling taxonomy and proves that, under a binary decision, a
-            hard-label consistency check can never catch joint failures.</p>
-          <ul>
-            <li>Dermatology agent evaluated on PAD-UFES-20 and an independent external HIBA test set, with two
-              open-weight 7B reasoners (Qwen2.5-VL, LLaVA-Med) and three contrastive encoders</li>
-            <li>Typographic prompt injection produces detectable directional retrieval capture; physical corruption
-              does not</li>
-            <li>Pipeline order alone decides the failure type: crop-first retrieval gives 55% joint wrong agreement
-              vs. 35% for full-image retrieval</li>
-            <li>Disagreement recall limited to 0.29 (crop-first) vs. 0.57 (full-image); effect reproduced on the
-              external test set</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">Agentic AI</span><span class="tag">Vision-language models</span><span
-              class="tag">Medical VLM safety</span><span class="tag">Prompt injection</span><span
-              class="tag">Dermatology</span>
-          </div>
-          <div class="link-row">
-            <a class="chip-link" href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-lines"></i> arXiv</a>
-            <a class="chip-link" href="https://arxiv.org/pdf/2610.40913" target="_blank" rel="noopener noreferrer"><i
-                class="fas fa-file-pdf"></i> Read PDF</a>
-          </div>
-        </div>
-        </div>
-
+        </article>
       </div>
-    </div>
+    </section>
 
   </main>
 
@@ -491,6 +371,7 @@
   </footer>
   <script src="/assets/js/nav.js"></script>
   <script src="/assets/js/figure-viewer.js"></script>
+  <script src="/assets/js/pub-filter.js"></script>
 </body>
 
 </html>
