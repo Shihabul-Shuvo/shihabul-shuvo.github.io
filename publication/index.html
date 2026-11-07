@@ -79,7 +79,7 @@
           <li><button type="button" class="venue" data-filter="venue:wacv" aria-pressed="false">
             <span class="venue-kind">Conference workshops &middot; MaCVi &middot; FABRIC</span>
             <span class="venue-name">IEEE/CVF WACV 2027</span>
-            <span class="venue-counts"><span class="vc vc-accepted">1 accepted</span><span class="vc vc-review">1 under review</span></span>
+            <span class="venue-counts"><span class="vc vc-accepted">2 accepted</span></span>
           </button></li>
           <li><button type="button" class="venue" data-filter="venue:jbhi" aria-pressed="false">
             <span class="venue-kind">Journal &middot; Q1 &middot; IF 7.7</span>
@@ -107,15 +107,15 @@
     <div class="container pub-toolbar" role="toolbar" aria-label="Filter publications">
       <div class="filter-chips">
         <button type="button" class="filter" data-filter="all" aria-pressed="true">All <span>9</span></button>
-        <button type="button" class="filter" data-filter="status:accepted" aria-pressed="false">Accepted <span>4</span></button>
-        <button type="button" class="filter" data-filter="status:review" aria-pressed="false">Under review <span>5</span></button>
+        <button type="button" class="filter" data-filter="status:accepted" aria-pressed="false">Accepted <span>5</span></button>
+        <button type="button" class="filter" data-filter="status:review" aria-pressed="false">Under review <span>4</span></button>
         <button type="button" class="filter" data-filter="first" aria-pressed="false">First author <span>4</span></button>
       </div>
       <p class="filter-status" aria-live="polite"></p>
     </div>
 
     <section class="container pub-group" data-group="accepted" aria-labelledby="h-accepted">
-      <h2 id="h-accepted">Accepted <span class="count">4</span></h2>
+      <h2 id="h-accepted">Accepted <span class="count">5</span></h2>
       <div class="pub-list">
         <article class="pub-card" id="aquaprobe" data-status="accepted" data-venue="wacv" data-first="true">
           <a class="pub-figure" href="/assets/img/publications/full/aquaprobe-architecture.webp"
@@ -220,11 +220,36 @@
             </ul>
           </div>
         </article>
+        <article class="pub-card" id="coupled" data-status="accepted" data-venue="wacv" data-first="false">
+          <a class="pub-figure" href="/assets/img/publications/full/coupled-independent-framework.webp"
+            aria-label="View architecture figure for Coupled or Independent?" aria-haspopup="dialog"
+            data-figure-title="Coupled or Independent?" data-figure-caption="Tool and reasoning channels, with detectable and undetectable failure paths.">
+            <img src="/assets/img/publications/thumbnails/coupled-independent-framework.webp" width="960" height="537"
+              alt="Pipeline: a perturbed skin lesion image passes through retrieval tools and a VLM reasoner; a disagreement check fires in one case and stays silent in the other." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
+          </a>
+          <div class="pub-body">
+            <div class="pub-badges"><span class="pill pill-accepted">Accepted</span></div>
+            <h3><a href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer">Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems</a></h3>
+            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Md Mostafijur Rahman, Jamil Fayyad</p>
+            <p class="pub-venue">FABRIC Workshop, IEEE/CVF WACV 2027</p>
+            <p class="pub-summary">Shows that when a medical VLM agent's tools and reasoner share one visual fault, a hard-label consistency check cannot catch their joint failures.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-coupled">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-coupled">
+                <li>Crop-first retrieval gives 55% joint wrong agreement vs. 35% for full-image retrieval</li>
+                <li>Disagreement recall limited to 0.29 (crop-first) vs. 0.57 (full-image)</li>
+                <li>Effect reproduced on an independent external test set</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="container pub-group" data-group="review" aria-labelledby="h-review">
-      <h2 id="h-review">Under Review <span class="count">5</span></h2>
+      <h2 id="h-review">Under Review <span class="count">4</span></h2>
       <div class="pub-list">
         <article class="pub-card" id="lcm-unet" data-status="review" data-venue="jbhi" data-first="true">
           <a class="pub-figure" href="/assets/img/publications/full/lcm-unet-architecture.webp"
@@ -323,31 +348,6 @@
                 <li>Worst-case cross-study linkability reduced from 0.961 to 0.791 AUC</li>
                 <li>Macro AUROC cost of only 0.012 relative to reconstruction</li>
                 <li>Evaluated on patient-disjoint ChestX-ray14 sets with adapted attackers</li>
-            </ul>
-          </div>
-        </article>
-        <article class="pub-card" id="coupled" data-status="review" data-venue="wacv" data-first="false">
-          <a class="pub-figure" href="/assets/img/publications/full/coupled-independent-framework.webp"
-            aria-label="View architecture figure for Coupled or Independent?" aria-haspopup="dialog"
-            data-figure-title="Coupled or Independent?" data-figure-caption="Tool and reasoning channels, with detectable and undetectable failure paths.">
-            <img src="/assets/img/publications/thumbnails/coupled-independent-framework.webp" width="960" height="537"
-              alt="Pipeline: a perturbed skin lesion image passes through retrieval tools and a VLM reasoner; a disagreement check fires in one case and stays silent in the other." loading="lazy" decoding="async" />
-            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
-          </a>
-          <div class="pub-body">
-            <div class="pub-badges"><span class="pill pill-review">Under review</span></div>
-            <h3><a href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer">Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems</a></h3>
-            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Md Mostafijur Rahman, Jamil Fayyad</p>
-            <p class="pub-venue">FABRIC Workshop, IEEE/CVF WACV 2027</p>
-            <p class="pub-summary">Shows that when a medical VLM agent's tools and reasoner share one visual fault, a hard-label consistency check cannot catch their joint failures.</p>
-            <div class="pub-actions">
-              <a class="chip-link" href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
-              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-coupled">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-            </div>
-            <ul class="pub-results" id="r-coupled">
-                <li>Crop-first retrieval gives 55% joint wrong agreement vs. 35% for full-image retrieval</li>
-                <li>Disagreement recall limited to 0.29 (crop-first) vs. 0.57 (full-image)</li>
-                <li>Effect reproduced on an independent external test set</li>
             </ul>
           </div>
         </article>
