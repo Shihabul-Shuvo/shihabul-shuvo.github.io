@@ -142,6 +142,31 @@
             </ul>
           </div>
         </article>
+        <article class="pub-card" id="coupled" data-status="accepted" data-venue="wacv" data-first="false">
+          <a class="pub-figure" href="/assets/img/publications/full/coupled-independent-framework.webp"
+            aria-label="View architecture figure for Coupled or Independent?" aria-haspopup="dialog"
+            data-figure-title="Coupled or Independent?" data-figure-caption="Tool and reasoning channels, with detectable and undetectable failure paths.">
+            <img src="/assets/img/publications/thumbnails/coupled-independent-framework.webp" width="960" height="537"
+              alt="Pipeline: a perturbed skin lesion image passes through retrieval tools and a VLM reasoner; a disagreement check fires in one case and stays silent in the other." loading="lazy" decoding="async" />
+            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
+          </a>
+          <div class="pub-body">
+            <div class="pub-badges"><span class="pill pill-accepted">Accepted</span></div>
+            <h3><a href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer">Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems</a></h3>
+            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Md Mostafijur Rahman, Jamil Fayyad</p>
+            <p class="pub-venue">FABRIC Workshop, IEEE/CVF WACV 2027</p>
+            <p class="pub-summary">Shows that when a medical VLM agent's tools and reasoner share one visual fault, a hard-label consistency check cannot catch their joint failures.</p>
+            <div class="pub-actions">
+              <a class="chip-link" href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
+              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-coupled">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+            <ul class="pub-results" id="r-coupled">
+                <li>Crop-first retrieval gives 55% joint wrong agreement vs. 35% for full-image retrieval</li>
+                <li>Disagreement recall limited to 0.29 (crop-first) vs. 0.57 (full-image)</li>
+                <li>Effect reproduced on an independent external test set</li>
+            </ul>
+          </div>
+        </article>
         <article class="pub-card" id="wavefog" data-status="accepted" data-venue="becithcon" data-first="true">
           <a class="pub-figure" href="/assets/img/publications/full/wavefog-architecture.webp"
             aria-label="View architecture figure for WaveFoG" aria-haspopup="dialog"
@@ -217,31 +242,6 @@
                 <li>88.77% accuracy, QWK 0.884, macro-F1 0.792 on APTOS 2019</li>
                 <li>4.69M parameters; beats ResNet50 (23.5M) by &Delta;QWK 0.022</li>
                 <li>Grad-CAM saliency for post-hoc explainability</li>
-            </ul>
-          </div>
-        </article>
-        <article class="pub-card" id="coupled" data-status="accepted" data-venue="wacv" data-first="false">
-          <a class="pub-figure" href="/assets/img/publications/full/coupled-independent-framework.webp"
-            aria-label="View architecture figure for Coupled or Independent?" aria-haspopup="dialog"
-            data-figure-title="Coupled or Independent?" data-figure-caption="Tool and reasoning channels, with detectable and undetectable failure paths.">
-            <img src="/assets/img/publications/thumbnails/coupled-independent-framework.webp" width="960" height="537"
-              alt="Pipeline: a perturbed skin lesion image passes through retrieval tools and a VLM reasoner; a disagreement check fires in one case and stays silent in the other." loading="lazy" decoding="async" />
-            <span class="pub-figure-hint" aria-hidden="true"><i class="fas fa-expand"></i> View figure</span>
-          </a>
-          <div class="pub-body">
-            <div class="pub-badges"><span class="pill pill-accepted">Accepted</span></div>
-            <h3><a href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer">Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems</a></h3>
-            <p class="pub-authors">Nishi Kanta Paul, <strong>Md Shihabul Islam Shovo</strong>, Md Mostafijur Rahman, Jamil Fayyad</p>
-            <p class="pub-venue">FABRIC Workshop, IEEE/CVF WACV 2027</p>
-            <p class="pub-summary">Shows that when a medical VLM agent's tools and reasoner share one visual fault, a hard-label consistency check cannot catch their joint failures.</p>
-            <div class="pub-actions">
-              <a class="chip-link" href="https://arxiv.org/abs/2610.40913" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read PDF</a>
-              <button type="button" class="chip-link chip-ghost results-toggle" aria-expanded="true" aria-controls="r-coupled">Key results <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-            </div>
-            <ul class="pub-results" id="r-coupled">
-                <li>Crop-first retrieval gives 55% joint wrong agreement vs. 35% for full-image retrieval</li>
-                <li>Disagreement recall limited to 0.29 (crop-first) vs. 0.57 (full-image)</li>
-                <li>Effect reproduced on an independent external test set</li>
             </ul>
           </div>
         </article>
